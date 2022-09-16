@@ -1,0 +1,88 @@
+<section class="header">
+	<div class="header-wrapper container">
+		<div class="header-left"> 
+			<div class="logo">
+				<img src="../resource/icon/logo2.png" alt="">
+			</div>
+			<div class="header-menu">
+				<div class="theme">
+					<img src="../resource/icon/profile-pic.jpg" alt="img">
+					<div class="theme-switch">
+						<label class="switch">
+							<input type="checkbox">
+							<div>
+								<i class="fas fa-moon"></i>
+								<i class="fas fa-sun"></i>
+							</div>
+						</label>
+					</div>
+				</div>
+				<ul>
+					<li><i class="fas fa-home"></i><a href="/">Home</a></li>
+					<li><i class="fas fa-user"></i><a href="#about-me">About</a></li>
+					<li><i class="fas fa-bullhorn"></i><a href="#service">Services</a></li>
+					<li><i class="fas fa-laptop-house"></i><a href="#portfolio">Portfolio</a></li>
+					<li><i class="fas fa-paper-plane"></i><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="social">
+					<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div>
+				<div class="setting">
+					<i class="fas fa-cog "></i>
+					<div class="dropdown">
+						<div class="theme">
+							<img src="../resource/icon/profile-pic.jpg" alt="img">
+							<div class="theme-switch">
+								<label class="switch">
+									<input type="checkbox">
+									<div>
+										<i class="fas fa-moon"></i>
+										<i class="fas fa-sun"></i>
+									</div>
+								</label>
+							</div>
+						</div>
+						<ul>
+							<% if(!isLogin) { %>
+								<li>
+									<i class="fas fa-sign-in-alt "></i>
+									<a href="/login">Log in</a>
+								</li>
+								<li>
+									<i class="fas fa-user-plus "></i>
+									<a href="/register">Sign Up</a>
+								</li>
+							<% } else { %>
+								<% if(user.email === "ibrahim@gmail.com") { %>
+									<li>
+										<i class="fas fa-user-shield"></i>
+										<a href="/admin">Admin Panel</a>
+									</li>
+								<% } %>
+								<li>
+									<i class="fas fa-sign-out-alt"></i>
+									<a href="/logout"> Log Out</a>
+								</li>							
+							<% } %>
+							<div class="social">
+								<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+								<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
+								<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
+								<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="bar">
+					<i class="fas fa-bars "></i>
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

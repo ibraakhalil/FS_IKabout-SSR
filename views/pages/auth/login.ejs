@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/auth.css">
+    <title>Login</title>
+</head>
+<body class="checked">
+    <%- include("../../layout/header") %>
+    <%- include("../../layout/flash") %>
+
+    <div class="auth">
+        <div class="wrapper">
+            <div class="inner-div">
+                <div class="header-text"><span>Login Account</span></div>
+                <form class="form-field" action="/login" method="post">
+                    <div class="form-group">
+                        <div class="wrapper">
+                            <input type="email" class="user-pass" name="email" placeholder="Email" value="<%=value.email %>" required/>
+                        </div>
+                        <div class="error-feedback">
+                            <p><%= error ? error.email : "" %></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="wrapper">
+                            <input type="password" class="user-pass" name="password" placeholder="Password" required/>
+                        </div>
+                        <div class="error-feedback">
+                            <p><%= error ? error.password : "" %></p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary"> Login <span></span></button>
+                </form>
+                <div class="link">
+                    <a href="#"> Forgot Password </a> or
+                    <a href="/register"> Signup </a>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+<%- include("../../layout/footer") %>
+</body>
+</html>

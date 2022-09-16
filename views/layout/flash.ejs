@@ -1,0 +1,21 @@
+<% if(flash.success[0]) { %>
+    <div class="flash-message success">
+        <div class="wrapper">
+            <div class="close">&times;</div>
+            <div class="message">
+                <%= flash.success[0] %>
+            </div>
+        </div>
+    </div>
+<% } %>
+
+<% if(flash.fail[0]) { %>
+    <div class="flash-message fail">
+        <div class="wrapper">
+            <div class="close">&times;</div>
+            <div class="message">
+                <%= flash.fail[0] %>
+            </div>
+        </div>
+    </div>
+<% } %>

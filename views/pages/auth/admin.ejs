@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/auth.css">
+<title> Admin </title>
+</head>
+<body class="checked">
+<%- include("../../layout/header") %>
+
+	<div class="modal">
+		<div class="close">&times;</div>
+		<div class="wrapper">
+			<div class="message-head">
+				<div>
+					<p class="email">
+						ibrahim@gmail.com
+					</p>
+					<p class="date">
+						7 May 2022
+					</p>
+				</div>
+			</div>
+			<div class="message-body">
+				<p class="text">
+				</p>
+				<p class="signature">
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="admin">
+		<div class="container">
+			<div class="messages">
+				<h1>Recent Message</h1>
+				<div class="wrapper">
+				<% allMessage.forEach((sender, index) => { %>
+					<div class="item">
+						<div class="left">
+							<p class="name">
+								<%= sender.name %>
+							</p>
+							<p class="email">
+								<%= sender.email %>
+							</p>
+						</div>
+						<div class="right">
+							<p class="message">
+								<%= sender.message %>
+							</p>
+						</div>
+					</div>					
+				<% }) %>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<%- include("../../layout/footer") %>
+
+<script src="scripts/admin.js"></script>
+</body>
+</html>
+
+
+

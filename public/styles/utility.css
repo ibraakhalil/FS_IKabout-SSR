@@ -1,0 +1,205 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+	--headerText: #00a8ff;
+	--secondary: #31fbf8;
+	--pure: #fff;
+	--dark: black;
+	--background: #eaf0f4;
+	--background2: #cbeaf7;
+	--para: #605555;
+	--darkBlue: #02052b;
+	--dropdown: #f4f8ff;
+	--copyright: #34495e;
+	--nav: #272933;
+	--shadow: #0000000f;
+	--button: #cadeea;
+	--after: #142b4d70;
+	--primary: #E9E4E6;
+	--border: #98999f29;
+}
+
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	transition: 0.3s;
+}
+
+
+body.checked {
+	--primary: #4b70ff;
+	--secondary: #07348a;
+	--pure: black;
+	--dark: white;
+	--background: #101320;
+	--background2: #06222b;
+	--para: #ceb6b6;
+	--dropdown: #081a24;
+	--nav: #b2bbdd;
+	--shadow: #0000004f;
+	--darkBlue: #b9bbd0;
+	--copyright: #a0afb3;
+	--button: #121b22;
+	--after: #1c364a;
+	--primary: #1B1F3A;
+	--border: #171b37;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--background);
+	font-family: montserrat;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+section {
+	padding-top: 3.5rem;
+}
+
+p {
+	font-family: "montserrat", sans-serif;
+	font-size: 14px;
+	color: var(--para);
+	line-height: 1.5;
+	font-weight: 300;
+}
+ul, ol {
+	list-style: none;
+	font-family: "montserrat", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+
+.btn-group {
+	margin-top: 4rem;
+}
+.btn {
+	font-size: 15px;
+	font-family: montserrat;
+	font-weight: 500;
+	border: none;
+	color: var(--dark);
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn-primary {
+	background: var(--primary);
+	margin-right: 1rem;
+	box-shadow: 5px 10px 12px 0 var(--shadow);
+	width: 175px;
+	height: 42px;
+}
+.btn-secondary {
+	background: var(--button);
+	box-shadow: 5px 10px 12px 0 var(--shadow);
+	width: 175px;
+	height: 42px;
+}
+.btn span {
+	/* visibility: none; */
+	opacity: 0;
+	width: 0px;
+	display: inline-block;
+	transition: 0.3s;
+	position: relative;
+}
+.btn span::after {
+	content: "»";
+	position: absolute;
+	font-size: 20px;
+	bottom: -5px;
+	font-weight: 600;
+	color: var(--dark);
+}
+.btn:hover span {
+	visibility: visible;
+	opacity: 1;
+	width: 15px;
+}
+ 
+.social i:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.header-text {
+	font-size: 32px;
+	text-align: center;
+	color: var(--headerText);
+	text-transform: uppercase;
+	font-family: "montserrat";
+}
+.header-text span {
+	position: relative;
+	display: inline-block;
+}
+.header-text span::after {
+	content: "";
+	width: 0%;
+	height: 4px;
+	background: var(--after);
+	position: absolute;
+	display: inline-block;
+	bottom: -16px;
+	left: 50%;
+	border-radius: 50px;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.header-text span.active::after {
+	width: 50%;
+}
+
+
+/********************Flash Message******************/
+
+.flash-message {
+	padding: 1rem 2rem;
+	position: fixed;
+	bottom: 5rem;
+	right: 2rem;
+	background: white;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 100;
+}
+.flash-message.success {
+	background: #5ed40a;
+}
+.flash-message.fail {
+	background: #ff0000;
+}
+.flash-message .close {
+	position: absolute;
+	right: 4px;
+	top: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	color: #ff3e3e;
+}
+.flash-message .message {
+	color: white;
+}
+
+
+
