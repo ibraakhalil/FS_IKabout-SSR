@@ -1,0 +1,27 @@
+@import url(./utility.css);
+@import url(./header-footer.css);
+
+.post {
+	width: 60%;
+	margin: 4rem auto;
+}
+.post .header-text {
+	margin-bottom: 2rem;
+}
+.post .form-group {
+	margin-bottom: 1rem;
+}
+
+
+.post .form-group textarea {
+	height: 250px;
+}
+
+
+
+
+
+
+
+
+

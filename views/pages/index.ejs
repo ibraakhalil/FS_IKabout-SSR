@@ -257,6 +257,9 @@
 								<i class="far fa-user"></i>
 								<input type="text" name="name" required>
 							</div>
+							<div class="error-feedback">
+								<p><%= error.name %></p>
+							</div>
 						</div>
 						<div>
 							<label for="email">Email : </label>
@@ -264,11 +267,17 @@
 								<i class="far fa-envelope"></i>
 								<input type="email" name="email" required>
 							</div>
+							<div class="error-feedback">
+								<p><%= error.email %></p>
+							</div>
 						</div>
 					</div>
 					<div class="text-area">
 						<label for="message">Message : </label>
 						<textarea name="message" id="" cols="30" rows="5"></textarea>
+					</div>
+					<div class="error-feedback">
+						<p><%= error.message %></p>
 					</div>
 					<div class="btn-2">
 						<button class="btn btn-primary">Submit <span></span></button>

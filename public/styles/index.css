@@ -619,7 +619,7 @@ section.contact .right h2 {
 	font-size: 30px;
 	font-weight: 600;
 }
-section.contact .right p {
+section.contact .right > p {
 	width: 65%;
 	text-align: center;
 	margin: 0 auto;

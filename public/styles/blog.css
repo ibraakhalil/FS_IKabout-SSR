@@ -1,0 +1,19 @@
+@import url(utility.css);
+@import url(header-footer.css);
+
+
+.blog .wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3rem;
+}
+.blog .item {
+	background: var(--primary);
+	padding: 1rem;
+	border-radius: 5px;
+}
+.blog .item .title {
+	color: white;
+}
+
+

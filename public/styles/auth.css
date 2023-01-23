@@ -60,14 +60,6 @@ section.header .header-left .header-menu li {
 	margin: 0 auto;
 }
 
-.error-feedback {
-	margin-top: 3px;
-	margin-left: 5px;
-}
-.error-feedback p {
-	color: red;
-	font-weight: 400;
-}
 
 .link {
 	padding-top: 20px;

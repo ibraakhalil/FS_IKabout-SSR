@@ -91,6 +91,13 @@ const authenticated = (req, res, next) => {
 
     res.redirect("/")
 }
+
+const isLoggedIn = (req, res, next) => {
+    if(req.session.isLogin) {
+        return next()
+    }
+    res.redirect("login")
+}
 const logout = (req, res, next) => {
     req.session.destroy((err) => {
         if(err) {
@@ -102,4 +109,4 @@ const logout = (req, res, next) => {
 }
 
 
-module.exports = {getRegister, getLogin, postRegister, postLogin, authenticated, logout}
+module.exports = {getRegister, getLogin, postRegister, postLogin, authenticated, isLoggedIn, logout}

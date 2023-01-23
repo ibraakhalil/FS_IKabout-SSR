@@ -80,3 +80,14 @@ setting.addEventListener("click",function(){
     })
     
 })();
+
+
+///////////////////////////////Flash Message Timeout///////////////////////////////////
+
+(function(){
+    const flashMessage = document.querySelector(".flash-message")
+
+    setTimeout(() => {
+        flashMessage.style.display = "none"
+    }, 5000);
+})()
