@@ -4,7 +4,7 @@
 
 const portfolioItemData = {
         
-    web : [
+    frontend : [
         {
             name : "Travelix",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
@@ -55,7 +55,7 @@ const portfolioItemData = {
 
 
     
-    email : [
+    fullstack : [
         {
             name : "Email",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
@@ -92,7 +92,7 @@ const portfolioItemData = {
     ],
     
     
-    photoshop : [
+    other : [
         {
             name : "Photoshop",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",

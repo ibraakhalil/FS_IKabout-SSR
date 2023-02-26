@@ -99,11 +99,11 @@
             }
         })
     })
-    for(let i=0; i < portfolioItemData["web"].length; i++){
+    for(let i=0; i < portfolioItemData["frontend"].length; i++){
         let creatItem = document.createElement("div")
         creatItem.setAttribute("class","item")
-        creatItem.setAttribute("style",`background:url(./resource/Photo/portfolio/${portfolioItemData["web"][i].background})`)
-        creatItem.innerHTML = item("web",i)
+        creatItem.setAttribute("style",`background:url(./resource/Photo/portfolio/${portfolioItemData["frontend"][i].background})`)
+        creatItem.innerHTML = item("frontend",i)
 
         portFolioWrapper.append(creatItem)
     }
