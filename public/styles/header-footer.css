@@ -138,7 +138,7 @@ section.header .setting.show .dropdown {
 	opacity: 0;
 	z-index: -10;
 }
-.theme-switch .switch input:checked ~ div {
+body.checked .theme-switch .switch div {
 	transform: translate3d(100%, 0px, 0px);
 }
 .theme-switch .switch div {

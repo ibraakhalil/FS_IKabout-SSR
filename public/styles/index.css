@@ -62,9 +62,13 @@ section.content .introduce {
 	font-weight: 300;
 	line-height: 0;
 }
+.content .skill-img {
+	width: 30vw;
+	margin-top: 3rem;
+}
 
 .content .btn-group {
-	margin-top: 3rem;
+	margin-top: 1rem;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -99,15 +103,15 @@ section.content .introduce {
 	right: -25%;
 	height: 120%;
 	bottom: 0;
+	transition: none;
 }
 .content .content-img img {
-	height: auto;
-	opacity: 0;
-	transition: all 0.1s;
+	display: none;
 }
 body.checked .content .content-img img {
 	opacity: 0.7;
 	height: 100%;
+	display: block;
 }
 
 /* .content .content-img::after {
