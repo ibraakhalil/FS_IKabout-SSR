@@ -29,7 +29,16 @@ section.header .header-left {
 	width: 100%;
 }
 section.header .header-left .logo {
-	width: 250px;
+	width: 100px;
+}
+section.header .header-left .logo img {
+	width: 60%;
+}
+section.header.scrolled .header-left .logo img {
+	width: 50%;
+}
+section.header .header-left .header-menu {
+	margin-left: 20rem;
 }
 section.header .header-left h1 {
 	font-family: montserrat;
@@ -117,12 +126,10 @@ section.header .setting.show .dropdown {
 	box-shadow: 0px 7px 12px 0 var(--shadow);
 }
 .theme img {
-	height: 40px;
-	object-fit: cover;
-	width: 40px;
-	border-radius: 50%;
+	height: 34px;
+	width: 34px;
+	padding: 5px;
 }
-
 .theme-switch .switch {
 	width: 40px;
 	height: 20px;
@@ -214,9 +221,7 @@ section.header .bar {
 	height: 80px;
 	position: fixed;
 }
-.header.scrolled .header-left .logo img {
-	width: 160px;
-}
+
 .header.scrolled .header-left .header-menu li {
 	font-size: 13px;
 }
@@ -290,6 +295,9 @@ footer .copyright p {
 	}
 	section.header .bar i:nth-child(2) {
 		display: none;
+	}
+	section.header .header-left .header-menu {
+		margin-left: 0rem;
 	}
 	.header-left .header-menu {
 		width: 280px;

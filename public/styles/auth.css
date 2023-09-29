@@ -10,9 +10,6 @@ section.header {
 	box-shadow: 0 5px 10px 0 var(--shadow);
 }
 
-section.header .header-left .logo img {
-	width: 160px;
-}
 section.header .header-left .header-menu li {
 	font-size: 13px;
 }

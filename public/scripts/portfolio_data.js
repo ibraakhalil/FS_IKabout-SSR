@@ -12,22 +12,22 @@ const portfolioItemData = {
         },
         {
             name : "Alumax",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "Alumax is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/hGPLVWCF/alumax.jpg"
         },
         {
             name : "DarkSoul",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "DarkSoul is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/TP7r97SK/darksoul.jpg"
         },
         {
             name : "Joobook",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "Joobook is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/VLqnTLpQ/joobook.jpg"
         },
         {
             name : "Digiart",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "Digiart is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/kG8K7n5S/digiart.jpg"
         },
         {
@@ -37,12 +37,12 @@ const portfolioItemData = {
         },
         {
             name : "ModusVersus",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "ModusVersus is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/1RNpGKKz/modusversus.jpg"
         },
         {
             name : "Moder CV",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/BQ92M1hB/moderncv.jpg.jpg"
         }
 
@@ -57,32 +57,22 @@ const portfolioItemData = {
     
     fullstack : [
         {
-            name : "Email",
+            name : "Full-stack",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "email.jpg"
         },
         {
-            name : "Email",
+            name : "IKBlog",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "email.jpg"
         },
         {
-            name : "Email",
+            name : "Ecommerce Site",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "email.jpg"
         },
         {
-            name : "Email",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "email.jpg"
-        },
-        {
-            name : "Email",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "email.jpg"
-        },
-        {
-            name : "Email",
+            name : "IK Transaction",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "email.jpg"
         }
@@ -129,22 +119,12 @@ const portfolioItemData = {
 
     javascript : [
         {
-            name : "Javascript",
+            name : "Javascript Clock",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "javascript.jpg"
         },
         {
-            name : "Javascript",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "javascript.jpg"
-        },
-        {
-            name : "Javascript",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "javascript.jpg"
-        },
-        {
-            name : "Javascript",
+            name : "Todo List",
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "javascript.jpg"
         },
@@ -158,7 +138,6 @@ const portfolioItemData = {
             description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "javascript.jpg"
         }
-
     ]
     
 }

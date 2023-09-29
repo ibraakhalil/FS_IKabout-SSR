@@ -5,7 +5,7 @@ const times = document.querySelector(".modal .close")
 times.addEventListener("click", (e) => {
     modal.classList.remove("show")
 })
- 
+  
 items.forEach((item, i) => {
     item.addEventListener("click", () => {
         const name = item.querySelector(".name")

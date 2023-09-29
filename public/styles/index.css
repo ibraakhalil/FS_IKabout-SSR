@@ -43,16 +43,19 @@ section.content .introduce {
 	font-weight: 300;
 	letter-spacing: 2px;
 	color: var(--dark);
-	font-size: 18px;
+	font-size: 22px;
 }
 .introduce h1 {
 	font-family: "poppins";
-	font-size: 6.5vw;
+	font-size: 7.5vw;
 	word-spacing: 3px;
-	text-shadow: 10px 10px 10px #00000038;
+	text-shadow: 10px 10px 10px #22222215;
 	color: #03ADFF;
 	-webkit-text-stroke: 1px;
 	-webkit-text-fill-color: transparent;
+}
+.introduce h1 span {
+	-webkit-text-fill-color: #03ADFF;
 }
 .introduce h4 {
 	font-size: 22px;
@@ -68,29 +71,13 @@ section.content .introduce {
 }
 
 .content .btn-group {
-	margin-top: 1rem;
+	margin-top: 3rem;
 	position: relative;
 	display: flex;
 	align-items: center;
 }
-.content .btn-group .marketplace {
-	display: flex;
-	flex-direction: column;
-	margin-left: 2rem;
-	visibility: hidden;
-	opacity: 0;
-	transform: translateX(-50%);
-}
-.content .btn-group.show .marketplace {
-	visibility: visible;
-	opacity: 1;
-	transform: translateX( 0%);
-}
-.content .btn-group .marketplace .btn {
-	padding: 7px 10px;
-	margin: 7px 0px;
-	background: var(--after);
-	font-size: 13px;
+.content .btn-group a {
+	color: var(--dark);
 }
 .content .btn-1 {
 	margin-top: 70px;
@@ -239,43 +226,42 @@ section.services .services-top {
 }
 .about-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
+	gap: 3rem;
+	grid-template-columns: 1.5fr 2fr;
+	grid-template-rows: 1fr;
 }
-section.about-me .left {
-	display: flex;
-	justify-content: center;
-}
+
 .about-me .left img {
-	width: 75%;
-	margin-left: 1rem;
+	height: 100%;
+
 }
 section.about-me .right {
-	align-self: baseline;
-	padding-top: 2rem;
+	flex: 2;
+
 }
-section.about-me .right > div {
+
+.about-me .description p {
+	font-size: 16px;
+	line-height: 1.7;
 	margin-bottom: 3rem;
+	letter-spacing: 0.5px;
 }
-.about-me .right p {
-	line-height: 1.5;
-	margin: 15px 0;
-	font-family: montserrat;
-}
-section.about-me .right p strong {
-	width: 175px;
-	position: relative;
-	font-weight: 600;
-}
-section.about-me .right p strong::after {
-	content: ":";
-	position: absolute;
-	right: 20px;
-}
-.about-me .right p strong {
-	position: relative;
-	width: 150px;
+.about-me .description p span {
+	font-size: 20px;
 	display: inline-block;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.about-me .follow_me {
+	display: flex;
+	align-items: center;
+}
+
+.about-me .follow_me p {
+	font-size: 16px;
+	margin-right: 1rem;
+	font-weight: 500;
 }
 
 
