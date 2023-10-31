@@ -1,10 +1,10 @@
-const {body} = require("express-validator")
+const { body } = require("express-validator")
 
 
 
 const messageValidator = [
     body("name")
-        .isLength({min: 3, max: 24}).withMessage("Name must be greater than 3 charts")
+        .isLength({ min: 3, max: 24 }).withMessage("Name must be greater than 3 charts")
         .trim()
     ,
     body("email")
@@ -13,7 +13,7 @@ const messageValidator = [
         .normalizeEmail()
     ,
     body("message")
-        .isLength({min:1}).withMessage("Message can't Empty")
+        .isLength({ min: 1 }).withMessage("Message can't Empty")
 ]
 
 

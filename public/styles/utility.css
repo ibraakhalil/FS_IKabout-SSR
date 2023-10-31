@@ -1,5 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
 	--headerText: #00a8ff;
@@ -25,6 +26,7 @@
 	margin:0;
 	box-sizing:border-box;
 	transition: 0.3s;
+	font-family: 'Poppins', sans-serif;
 }
 
 

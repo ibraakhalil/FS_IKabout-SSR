@@ -76,7 +76,14 @@
                     <div class="description">
                     ${portfolioItemData[target][index].description}
                     </div>
-                    <button class="btn btn-primary">View<span></span></button>
+                    <div>
+                        <a target="blank" href="${portfolioItemData[target][index].githubLink}">
+                            <button class="btn btn-primary">Github</button>
+                        </a>   
+                        <a target="blank" href="${portfolioItemData[target][index].liveLink}">
+                            <button class="btn btn-primary">Live<span></span></button>
+                        </a>
+                    </div>
                 </div>
             </div>`;
 
@@ -108,18 +115,12 @@
         portFolioWrapper.append(creatItem)
     }
 
-
-
-
 })();
 
 
 
 
-
-
 /////////////////////////////////////Contact Form focus Effect///////////////////////////////
-
 
 
 (function () {
