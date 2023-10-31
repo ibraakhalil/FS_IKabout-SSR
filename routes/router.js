@@ -16,7 +16,7 @@ router.use(postRouter)
 
 
 router.get("/", (req, res, next) => { 
-    res.render("pages/index", {
+    res.render("pages/index.ejs", {
         flash: flashMessage(req),
         error: ""
     })
