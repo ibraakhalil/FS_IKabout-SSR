@@ -6,7 +6,7 @@ const getAdmin = async (req, res, next) => {
 
     const allMessage = await Message.find()
 
-    res.render("pages/auth/admin.ejs", {
+    res.render("pages/auth/admin.html", {
         flash: flashMessage(req),
         allMessage
     })
