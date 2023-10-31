@@ -2,14 +2,14 @@ const User = require("../model/user")
 const flashMessage = require("../utils/flash")
 
 const getRegister = (req, res, next) => {
-    res.render("pages/auth/registration.html", {
+    res.render("pages/auth/registration", {
         flash: flashMessage(req),
         value: {},
         error: {}
     })
 }
 const getLogin = (req, res, next) => {
-    res.render("pages/auth/login.html", {
+    res.render("pages/auth/login", {
         flash: flashMessage(req),
         value: {},
         error: {}
@@ -29,7 +29,7 @@ const postRegister = async (req, res, next) => {
     try {
         const user = await User.findOne({email})
         if(user) {
-            return res.render("pages/auth/registration.html",{
+            return res.render("pages/auth/registration",{
                 error: {
                     email: "User Already Exist",
                     value: {name,email},
@@ -54,7 +54,7 @@ const postLogin = async (req, res, next) => {
     try {
         const user = await User.findOne({email})
         if(!user) {
-            return res.render("pages/auth/login.html", {
+            return res.render("pages/auth/login", {
                 error: {
                     email: "User not found"
                 },
@@ -63,7 +63,7 @@ const postLogin = async (req, res, next) => {
             })
         }
         if(password !== user.password) {
-            return res.render("pages/auth/login.html", {
+            return res.render("pages/auth/login", {
                 error: {
                     password: "Password not match"
                 },

@@ -16,7 +16,7 @@ router.use(postRouter)
 
 
 router.get("/", (req, res, next) => { 
-    res.render("pages/index.html", {
+    res.render("pages/index", {
         flash: flashMessage(req),
         error: ""
     })
@@ -26,11 +26,11 @@ router.post("/", messageValidator, postUserMessage)
 
  
 router.use((req, res, next) => {
-    res.render("pages/error/404.html")
+    res.render("pages/error/404")
 })
 router.use((err, req, res, next) => {
     console.log(err.message);
-    res.render("pages/error/500.html")
+    res.render("pages/error/500")
 })
 
 
