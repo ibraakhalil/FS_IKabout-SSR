@@ -4,7 +4,7 @@ const User = require("../model/user")
 
 
 const getBlog = (req, res, next) => {
-    res.render("pages/posts/blog", {
+    res.render("pages/posts/blog.ejs", {
         flash: flashMessage(req),
         error: "",
         value: ""
@@ -12,7 +12,7 @@ const getBlog = (req, res, next) => {
 }
 
 const getCreatePost = (req, res, next) => {
-    res.render("pages/posts/createPost", {
+    res.render("pages/posts/createPost.ejs", {
         flash: flashMessage(req),
         value: "",
         error: ""
@@ -40,7 +40,7 @@ const postCreatePost = async (req, res, next) => {
             {"$push": {posts: createPost._id}}
         )    
         
-        res.render("pages/posts/createPost", {
+        res.render("pages/posts/createPost.ejs", {
             flash: flashMessage(req),
             value: "",
             error: ""

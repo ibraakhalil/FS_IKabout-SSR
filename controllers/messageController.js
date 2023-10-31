@@ -6,7 +6,7 @@ const postUserMessage = (req, res, next) => {
     const errors = validationResult(req).formatWith(err => err.msg)
     if(!errors.isEmpty()) {
         req.flash("fail", "Check Your Form!")
-        return res.render("pages/index", {
+        return res.render("pages/index.ejs", {
             flash: flashMessage(req),
             error : errors.mapped()
         })
