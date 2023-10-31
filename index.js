@@ -14,6 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.engine('ejs', require('ejs').renderFile);
 
+app.use(express.static('public'))
 app.use(middlewares)
 app.use(router)
   
