@@ -272,6 +272,7 @@ section.about-me .right {
 
 .social {
 	font-size: 0em;
+	display: flex;
 }
 .social a {
 	margin-right: 1rem;
@@ -877,8 +878,7 @@ section.contact .btn-2 {
 		grid-template-columns: 1fr;
 	}
 	.about-me .left img {
-		width: 60%;
-		margin-left: -1rem;
+		width: 100%;
 	}
 	section.about-me .right {
 		margin-top: 1rem;

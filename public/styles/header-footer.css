@@ -239,14 +239,17 @@ footer {
 	font-weight: 500;
 	margin-top: 3rem;
 }
+footer .logo {
+	width: 50px;
+	height: 50px;
+}
 footer .wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding: 3rem 0;
+	padding: 1rem 0;
+	align-items: center;
 }
-footer .logo img {
-	width: 220px;
-}
+
 footer .social h3 {
 	font-size: 16px;
 	font-family: montserrat;
@@ -355,7 +358,7 @@ footer .copyright p {
 @media (max-width: 580px) {
 	
 	section.header .header-left .logo img {
-		width: 220px;
+		width: 44%;
 	}
 	section.header .bar {
 		width: 40px;
@@ -374,14 +377,9 @@ footer .copyright p {
 		font-size: 18px;
 	}
 
-
-	footer .wrapper {
-		flex-direction: column;
-		align-items: center;
-	}
-	footer .social h3 {
-		margin-top: 3rem;
-		text-align: center;
+	footer .logo {
+		width: 40px;
+		height: 40px;
 	}
 	footer .social a {
 		margin: 0 10px;
