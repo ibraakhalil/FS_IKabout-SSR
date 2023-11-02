@@ -68,22 +68,20 @@ const portfolioItemData = {
 
     ],
 
-
-
     
     fullstack : [
         {
             name : "Management app",
             description : "Using React.js, Node.js, Express.js, Mongodb. Authentication with JWT and bcrypt",
             background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            liveLink: 'https://messmanager.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/MERN-Mess_management_app'
         },
         {
             name : "IKBlog",
             description : "Fullstack blogsite using Next.js. User can make post, and do comment, reply, like, and dislike in other post. Authentication with Next-auth and bcrypt",
             background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            liveLink: 'https://ikblog.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/ikblog'
         },
         {
@@ -94,10 +92,10 @@ const portfolioItemData = {
             githubLink: 'https://github.com/ibraakhalil/MERN-Transaction_App'
         },
         {
-            name : "IK Transaction",
+            name : "IK Bank",
             description : "Transaction app where user create account and make transaction",
             background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            liveLink: 'https://ikbank.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
         },
         {
