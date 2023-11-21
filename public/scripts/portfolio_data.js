@@ -115,33 +115,8 @@ const portfolioItemData = {
     
     other : [
         {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "photoshop.jpg"
-        },
-        {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "photoshop.jpg"
-        },
-        {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "photoshop.jpg"
-        },
-        {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "photoshop.jpg"
-        },
-        {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "photoshop.jpg"
-        },
-        {
-            name : "Photoshop",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            name : "UI/UX Design",
+            description : "UI/UX Design is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "photoshop.jpg"
         }
     ],
