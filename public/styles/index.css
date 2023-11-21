@@ -794,6 +794,9 @@ section.contact .btn-2 {
 	.content {
 		padding-top: 0;
 	}
+	.content .skill-img {
+		width: 300px;
+	}
 	/* .content .content-wrapper img {
 		width: 420px;
 		position: absolute;
@@ -801,6 +804,9 @@ section.contact .btn-2 {
 		z-index: -10;
 		right: 0;
 	} */
+	.about-wrapper {
+		gap: 0rem;
+	}
 	section.about-me .right {
 		padding: 0;
 	}
