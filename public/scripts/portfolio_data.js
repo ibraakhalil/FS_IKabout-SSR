@@ -1,74 +1,6 @@
 
-const portfolioItemData = {
-        
-    frontend : [
-        {
-            name : "Travelix",
-            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/k54SBN4q/travelix.jpg",
-            liveLink: 'https://ibraakhalil.github.io/FE_Travelix_redesign/',
-            githubLink: 'https://github.com/ibraakhalil/FE_Travelix_redesign'
-        },
-        {
-            name : "Alumax",
-            description : "Alumax is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/hGPLVWCF/alumax.jpg",
-            liveLink: 'https://ibraakhalil.github.io/FE_Galumax/',
-            githubLink: 'https://github.com/ibraakhalil/FE_Galumax'
-        },
-        {
-            name : "DarkSoul",
-            description : "DarkSoul is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/TP7r97SK/darksoul.jpg",
-            liveLink: 'https://ibraakhalil.github.io/darksoul/',
-            githubLink: 'https://github.com/ibraakhalil/darksoul'
-        },
-        {
-            name : "Joobook",
-            description : "Joobook is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/VLqnTLpQ/joobook.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
-        },
-        {
-            name : "Digiart",
-            description : "Digiart is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/kG8K7n5S/digiart.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
-        },
-        {
-            name : "SpaceX",
-            description : "It is spaceX website clone Version. for this website i used HTML, CSS and PURE JAVASCRIPT ",
-            background : "https://i.postimg.cc/x19MSVVk/spaceX.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
-        },
-        {
-            name : "ModusVersus",
-            description : "ModusVersus is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/1RNpGKKz/modusversus.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
-        },
-        {
-            name : "Moder CV",
-            description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/BQ92M1hB/moderncv.jpg.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
-        },
-        {
-            name : "The Modernist",
-            description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
-            background : "https://i.postimg.cc/BQ92M1hB/moderncv.jpg.jpg",
-            liveLink: 'https://ibraakhalil.github.io/FE_The_Modernist/',
-            githubLink: 'https://github.com/ibraakhalil/FE_The_Modernist'
-        }
+const portfolioItemData = { 
 
-    ],
-
-    
     fullstack : [
         {
             name : "Messbook",
@@ -106,7 +38,80 @@ const portfolioItemData = {
             githubLink: 'https://github.com/ibraakhalil/FS-Homitoon_Blog'
         }
     ],
-    
+      
+    frontend : [
+        {
+            name : "Travelix",
+            description : "Travelix is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/k54SBN4q/travelix.jpg",
+            liveLink: 'https://ibraakhalil.github.io/FE_Travelix_redesign/',
+            githubLink: 'https://github.com/ibraakhalil/FE_Travelix_redesign'
+        },
+        {
+            name : "Alumax",
+            description : "Alumax is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/hGPLVWCF/alumax.jpg",
+            liveLink: 'https://ibraakhalil.github.io/FE_Galumax/',
+            githubLink: 'https://github.com/ibraakhalil/FE_Galumax'
+        },
+        {
+            name : "DarkSoul",
+            description : "DarkSoul is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/TP7r97SK/darksoul.jpg",
+            liveLink: 'https://ibraakhalil.github.io/darksoul/',
+            githubLink: 'https://github.com/ibraakhalil/darksoul'
+        },
+        {
+            name : "Joobook",
+            description : "Joobook is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/VLqnTLpQ/joobook.jpg",
+            liveLink: 'https://ibraakhalil.github.io/FE_jobbook/',
+            githubLink: 'https://github.com/ibraakhalil/jobbook'
+        },
+        {
+            name : "Digiart",
+            description : "Digiart is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/kG8K7n5S/digiart.jpg",
+            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+        },
+        {
+            name : "SpaceX",
+            description : "It is spaceX website clone Version. for this website i used HTML, CSS and PURE JAVASCRIPT ",
+            background : "https://i.postimg.cc/x19MSVVk/spaceX.jpg",
+            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+        },
+        {
+            name : "Nobodysfool",
+            description : "It is spaceX website clone Version. for this website i used HTML, CSS and PURE JAVASCRIPT ",
+            background : "https://i.postimg.cc/T3PfYhcn/nobodysfool.png",
+            liveLink: 'https://ibraakhalil.github.io/FE_Nobodysfool/',
+            githubLink: 'https://github.com/ibraakhalil/FE_Nobodysfool'
+        },
+        {
+            name : "ModusVersus",
+            description : "ModusVersus is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/1RNpGKKz/modusversus.jpg",
+            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+        },
+        {
+            name : "Moder CV",
+            description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/BQ92M1hB/moderncv.jpg.jpg",
+            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+        },
+        {
+            name : "The Modernist",
+            description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
+            background : "https://i.postimg.cc/t4RCZB9Z/modernist.png",
+            liveLink: 'https://ibraakhalil.github.io/FE_The_Modernist/',
+            githubLink: 'https://github.com/ibraakhalil/FE_The_Modernist'
+        }
+
+    ],
     
     other : [
         {
@@ -141,7 +146,6 @@ const portfolioItemData = {
         }
     ],
 
-    
     javascript : [
         {
             name : "JS Clock",
