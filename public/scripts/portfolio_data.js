@@ -71,16 +71,16 @@ const portfolioItemData = {
     
     fullstack : [
         {
-            name : "Management app",
+            name : "Messbook",
             description : "Using React.js, Node.js, Express.js, Mongodb. Authentication with JWT and bcrypt",
-            background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
+            background : "https://i.postimg.cc/mr44Fzdh/messbook.png",
             liveLink: 'https://messmanager.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/MERN-Mess_management_app'
         },
         {
             name : "IKBlog",
             description : "Fullstack blogsite using Next.js. User can make post, and do comment, reply, like, and dislike in other post. Authentication with Next-auth and bcrypt",
-            background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
+            background : "https://i.postimg.cc/QNYjnMMn/ikblog.png",
             liveLink: 'https://ikblog.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/ikblog'
         },
@@ -88,21 +88,21 @@ const portfolioItemData = {
             name : "Ecommerce Site",
             description : "MERN stack Ecommerce website. In this site people find their product and purchage with his balance",
             background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            liveLink: 'https://ikbank.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/MERN-Transaction_App'
         },
         {
-            name : "IK Bank",
+            name : "Tikatuli Bank",
             description : "Transaction app where user create account and make transaction",
-            background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
+            background : "https://i.postimg.cc/8CQRRtGN/tikatulibank.png",
             liveLink: 'https://ikbank.vercel.app/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+            githubLink: 'https://github.com/ibraakhalil/MERN-Transaction_App'
         },
         {
             name : "Homitoon Blog",
             description : "Blog app where user create account and make blog",
-            background : "https://i.postimg.cc/rswLvQNt/fullstack.webp",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
+            background : "https://i.postimg.cc/pLZWCdbr/modelblogsite.png",
+            liveLink: 'https://homitoon.vercel.app/',
             githubLink: 'https://github.com/ibraakhalil/FS-Homitoon_Blog'
         }
     ],
@@ -141,6 +141,7 @@ const portfolioItemData = {
         }
     ],
 
+    
     javascript : [
         {
             name : "JS Clock",

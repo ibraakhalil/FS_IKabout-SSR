@@ -356,7 +356,9 @@ footer .copyright p {
 
 
 @media (max-width: 580px) {
-	
+	.header.scrolled {
+		height: 75px;
+	}
 	section.header .header-left .logo img {
 		width: 44%;
 	}
