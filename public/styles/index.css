@@ -724,7 +724,7 @@ section.contact .btn-2 {
 	Tablet
 *******************************************/
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
 	.container {
 		width: 90%;
 	}
@@ -746,7 +746,9 @@ section.contact .btn-2 {
 	.content .content-wrapper img {
         opacity: 0.6;
     }
-
+	.content .skill-img {
+		width: 400px;
+	}
 	.about-me {
 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 70% 95%, 0% 100%);
 		padding-bottom: 8rem;
@@ -787,7 +789,7 @@ section.contact .btn-2 {
 	Landscap Mobile
 *******************************************/
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	section.content .introduce {
 		padding-top: 0rem;
 	}
@@ -853,7 +855,7 @@ section.contact .btn-2 {
 	Mobile
 *******************************************/
 
-@media (max-width: 580px) {
+@media only screen and (max-width: 580px) {
 
 	section.header.scrolled .header-left .logo img {
 		width: 40%;
@@ -870,7 +872,7 @@ section.contact .btn-2 {
 		padding-bottom: 8rem;
 	}
 	.content .skill-img {
-		width: 240px;
+		width: 260px;
 		margin-top: 5rem;
 	}
 	.introduce h2 {
@@ -951,11 +953,13 @@ section.contact .btn-2 {
 
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 	.header-text span::after {
 		width: 45%;
 	}
-
+	.content .skill-img {
+		width: 260px;
+	}
 	section.contact .left {
 		padding: 2rem 2rem;
 	}
