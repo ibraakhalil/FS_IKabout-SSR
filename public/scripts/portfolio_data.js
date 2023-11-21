@@ -79,8 +79,8 @@ const portfolioItemData = {
             name : "SpaceX",
             description : "It is spaceX website clone Version. for this website i used HTML, CSS and PURE JAVASCRIPT ",
             background : "https://i.postimg.cc/x19MSVVk/spaceX.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+            liveLink: 'https://ibraakhalil.github.io/FE_SpaceX/',
+            githubLink: 'https://github.com/ibraakhalil/FE_SpaceX'
         },
         {
             name : "Nobodysfool",
@@ -100,8 +100,8 @@ const portfolioItemData = {
             name : "Moder CV",
             description : "Moder CV is Travel agency Website. To make this web site I used HTML, CSS & JAVASCRIPT. It is not yet responsive",
             background : "https://i.postimg.cc/BQ92M1hB/moderncv.jpg.jpg",
-            liveLink: 'https://ibraakhalil.github.io/JS_Slider1/',
-            githubLink: 'https://github.com/ibraakhalil/JS_Slider1'
+            liveLink: 'https://ibraakhalil.github.io/FE_Modern_CV/',
+            githubLink: 'https://github.com/ibraakhalil/FE_Modern_CV'
         },
         {
             name : "The Modernist",
