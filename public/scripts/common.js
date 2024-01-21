@@ -5,20 +5,12 @@
 //////////////////////////////Setting cog Dropdown////////////////////////////////
 
 (function () {
-
-    function windowClickExit() {
-        let dropDown = document.querySelector("section.header .dropdown")
-
-    }
-
     let setting = document.querySelector("section.header .setting i");
     let setting2 = document.querySelector("section.header .setting");
 
-
-    setting.addEventListener("click", function () {
+    setting.addEventListener("click", () => {
         setting2.classList.toggle("show")
     })
-
 })();
 
 
@@ -35,21 +27,10 @@
         paras[index].innerHTML = `${data}%`;
     })
 
-    let bars = document.querySelectorAll("section.header .bar i");
+    let bar = document.querySelector("section.header .bar");
     let headerMenu = document.querySelector(".header-left .header-menu");
-    bars.forEach(function (bar, index) {
-        bar.addEventListener("click", function (e) {
-
-            if (index == 0) {
-                headerMenu.style.transform = "translateX(0%)";
-                bars[1].style.display = "block";
-                bar.style.display = "none";
-            } else {
-                headerMenu.style.transform = "translateX(-100%)";
-                bars[0].style.display = "block";
-                bar.style.display = "none";
-            }
-        })
+    bar.addEventListener("click", function (e) {
+        headerMenu.classList.toggle('active')
     })
 
 })();
@@ -71,7 +52,7 @@
 
     themeSwitch.addEventListener('click', (e) => {
         body.classList.toggle('checked')
-        localStorage.setItem('theme', `${theme == '' ? 'checked': "" }`)
+        localStorage.setItem('theme', `${theme == '' ? 'checked' : ""}`)
     })
 })();
 

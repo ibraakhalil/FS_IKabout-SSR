@@ -11,9 +11,9 @@
 
 <body class="">
 	<%- include("../layout/header") %>
-	<%- include("../layout/flash") %>
+		<%- include("../layout/flash") %>
 
-	<section class="content">
+			<section class="content">
 				<div class="container">
 					<div class="content-wrapper">
 						<div class="introduce">
@@ -31,59 +31,25 @@
 						</div>
 					</div>
 				</div>
-	</section>
+			</section>
 
-	<section id="portfolio" class="portfolio">
-		<div class="container">
-			<div class="portfolio-top">
-				<h1 class="header-text"><span>Projects</span></h1>
-			</div>
-			<div class="portfolio-inner">
-				<div class="inner-top">
-					<div class="btn-group">
-						<button class="btn btn-1">Frontend</button>
-						<button class="btn btn-2">FullStack</button>
-						<button class="btn btn-3">Javascript</button>
-						<button class="btn btn-4">Other</button>
-					</div>
-				</div>
-				<div class="inner-bottom">
-					<div class="wrapper">
-						<!-- <div class="item">
-				<p class="item-name">item 1</p>
-				<div class="hover-content">
-					<div class="wrapper-2">
-						<div class="description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. At inventore doloremque ullam expedita similique totam hic saepe recusandae nesciunt
-						</div>
-						<button class="btn btn-primary"> Click Here <span></span></button>
-					</div>
-				</div>
-			</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="about-me" class="about-me">
+			<section id="about-me" class="about-me">
 				<div class="container">
 					<div class="about-top">
 						<h1 class="header-text"><span>About me</span></h1>
+						<p class="header-para">Here you will find more information about me, what I do, and my current
+							skills mostly in
+							terms of programming and technology </p>
 					</div>
 
 					<div class="about-wrapper">
-						<div class="left">
-							<img src="https://i.postimg.cc/6pFybcJT/Profile-Pic-800px.jpg" alt="">
-						</div>
 						<div class="right">
 							<div class="description">
+								<h2>Get to know me!</h2>
 								<p>
-									<span>
-										I'm passionate about Full-stack Web Development. I specialize in
-										Next.js and the MERN stack
-									</span> <br />
-									Which includes MongoDB, Express.js, React, and Node.js.
+									I'm passionate about Full-stack Web Development. I specialize in
+									Next.js and the MERN stack Which includes MongoDB, Express.js, React, and Node.js.
+									<br /><br />
 									Over the years, I've honed my skills in creating dynamic and responsive web
 									applications, with a strong emphasis on writing clean and efficient code. I take
 									pride in bridging the gap between front-end and back-end development, and I'm known
@@ -109,11 +75,97 @@
 								</div>
 							</div>
 						</div>
+						<div class="left">
+							<h2>My Skills</h2>
+							<div class="skills">
+								<div class="skills__skill">HTML</div>
+								<div class="skills__skill">CSS</div>
+								<div class="skills__skill">JavaScript</div>
+								<div class="skills__skill">Responsive Design</div>
+								<div class="skills__skill">React JS</div>
+								<div class="skills__skill">Next.js</div>
+								<div class="skills__skill">Node JS</div>
+								<div class="skills__skill">Express JS</div>
+								<div class="skills__skill">MongoDB</div>
+								<div class="skills__skill">Redux</div>
+								<div class="skills__skill">Socket.io</div>
+								<div class="skills__skill">GIT</div>
+								<div class="skills__skill">Github</div>
+								<div class="skills__skill">Docker</div>
+								<div class="skills__skill">SEO</div>
+								<div class="skills__skill">Terminal</div>
+							</div>
+						</div>
 					</div>
 				</div>
-	</section>
+			</section>
 
-	<section id="education" class="education container">
+			<section id="portfolio" class="portfolio">
+				<div class="container">
+					<div class="modal">
+						<div class="inner">
+							<div class="modal-container">
+								<div class="top">
+									<h3></h3>
+									<button class="close">Close</button>
+								</div>
+								<div class="modal-content">
+									<div class="photos">
+										<img src="">
+									</div>
+									<div class="link">
+										<a class="github"><i class="fab fa-github"></i>Github</a>
+										<a class="live"><i class="fas fa-link"></i>Live</a>
+									</div>
+									<div class="description">
+										<div class="overview">
+											<h4>About</h4>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+												suscipit laudantium magni, nihil neque corrupti sit molestias
+												consequuntur expedita fugiat officiis cumque nisi magnam earum maiores
+												aspernatur perferendis porro illum accusamus eligendi sint libero eaque
+												omnis. Fugit, itaque, at sunt, consectetur repellat reiciendis facilis
+												iure quasi sint debitis eligendi neque?
+											</p>
+										</div>
+										<div class="feature">
+											<h4>Project Feature</h4>
+											<p>Admin Panel , Manager Panel, Profile Page, Notice Board, MealChart,
+												Landing Page, Deposite, Expense, Auto Meal Rate Calculate etc</p>
+										</div>
+										<div class="used-skills">
+											<h4>Used Skills</h4>
+											<ul class="skills">
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-top">
+						<h1 class="header-text"><span>Projects</span></h1>
+						<p class="header-para">Here are a few past design projects I've worked on. Want to see more?
+							Email me.</p>
+					</div>
+					<div class="portfolio-inner">
+						<div class="inner-top">
+							<div class="btn-group">
+								<button class="btn btn-1 active">FullStack</button>
+								<button class="btn btn-2">Frontend</button>
+								<button class="btn btn-3">Javascript</button>
+							</div>
+						</div>
+						<div class="inner-bottom">
+							<div class="wrapper">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section id="education" class="education container">
 				<h1 class="header-text"><span>Education & Skills </span> </h1>
 				<div class="wrapper">
 					<div class="left">
@@ -192,9 +244,9 @@
 						</div>
 					</div>
 				</div>
-	</section>
+			</section> -->
 
-	<section id="service" class="services">
+			<section id="service" class="services">
 				<div class="container">
 					<div class="services-top">
 						<h1 class="header-text"><span>My Services</span></h1>
@@ -250,9 +302,9 @@
 						</li>
 					</ul>
 				</div>
-	</section>
+			</section>
 
-	<section id="contact" class="contact">
+			<section id="contact" class="contact">
 				<div class="container">
 					<!-- <h1 class="header-text"><span>Contact Me</span></h1> -->
 					<div class="contact-wrapper">
@@ -338,12 +390,12 @@
 						</div>
 					</div>
 				</div>
-	</section>
+			</section>
 
-	<%- include("../layout/footer") %>
-	<script src="scripts/portfolio_data.js"></script>
-	<script src="scripts/indexPage.js"></script>
-	<script src="scripts/common.js"></script>
+			<%- include("../layout/footer") %>
+				<script src="scripts/portfolio_data.js"></script>
+				<script src="scripts/indexPage.js"></script>
+				<script src="scripts/common.js"></script>
 </body>
 
 </html>

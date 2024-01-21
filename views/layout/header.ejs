@@ -1,73 +1,79 @@
 <section class="header">
 	<div class="header-wrapper container">
-		<div class="header-left"> 
+		<div class="header-left">
 			<div class="logo">
 				<img src="/resource/icon/IK.png" alt="">
 			</div>
-			<div class="header-menu">
-				<ul>
-					<li><i class="fas fa-home"></i><a href="/">Home</a></li>
-					<li><i class="fas fa-user"></i><a href="/#about-me">About</a></li>
-					<li><i class="fas fa-bullhorn"></i><a href="/#service">Services</a></li>
-					<li><i class="fas fa-laptop-house"></i><a href="/#portfolio">Portfolio</a></li>
-					<li><i class="fas fa-paper-plane"></i><a href="/#contact">Contact</a></li>
-				</ul>
-				<div class="social">
-					<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-					<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
-					<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
-					<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
-				</div>
-			</div>
-			<div>
-				<div class="setting">
-					<i class="fas fa-cog "></i>
-					<div class="dropdown">
-						<div class="theme">
-							<img src="/resource/icon/IK.png" alt="img">
-							<div class="theme-switch">
-								<label class="switch">
-									<div>
-										<i class="fas fa-moon"></i>
-										<i class="fas fa-sun"></i>
-									</div>
-								</label>
-							</div>
-						</div>
-						<ul>
-							<% if(!isLogin) { %>
-								<li>
-									<i class="fas fa-sign-in-alt "></i>
-									<a href="/login">Log in</a>
-								</li>
-								<li>
-									<i class="fas fa-user-plus "></i>
-									<a href="/register">Sign Up</a>
-								</li>
-							<% } else { %>
-								<% if(user.email === "ibrahim@gmail.com") { %>
-									<li>
-										<i class="fas fa-user-shield"></i>
-										<a href="/admin">Admin Panel</a>
-									</li>
-								<% } %>
-								<li>
-									<i class="fas fa-sign-out-alt"></i>
-									<a href="/logout"> Log Out</a>
-								</li>							
-							<% } %>
-							<div class="social">
-								<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
-								<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
-								<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
-							</div>
-						</ul>
+			<div class="header-left-wrapper">
+				<div class="header-menu">
+					<ul>
+						<li><i class="fas fa-home"></i><a href="/">Home</a></li>
+						<li><i class="fas fa-user"></i><a href="/#about-me">About</a></li>
+						<li><i class="fas fa-bullhorn"></i><a href="/#service">Services</a></li>
+						<li><i class="fas fa-laptop-house"></i><a href="/#portfolio">Portfolio</a></li>
+						<li><i class="fas fa-paper-plane"></i><a href="/#contact">Contact</a></li>
+					</ul>
+					<div class="social">
+						<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i
+								class="fab fa-facebook-square"></i></a>
+						<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i
+								class="fab fa-twitter-square"></i></a>
+						<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
+						<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
-				<div class="bar">
-					<i class="fas fa-bars "></i>
-					<i class="fas fa-times"></i>
+				<div>
+					<div class="setting">
+						<i class="fas fa-cog "></i>
+						<div class="dropdown">
+							<div class="theme">
+								<img src="/resource/icon/IK.png" alt="img">
+								<div class="theme-switch">
+									<label class="switch">
+										<div>
+											<i class="fas fa-moon"></i>
+											<i class="fas fa-sun"></i>
+										</div>
+									</label>
+								</div>
+							</div>
+							<ul>
+								<% if(!isLogin) { %>
+									<li>
+										<i class="fas fa-sign-in-alt "></i>
+										<a href="/login">Log in</a>
+									</li>
+								<% } else { %>
+									<% if(user.email === "ibrahim@gmail.com") { %>
+										<li>
+											<i class="fas fa-user-shield"></i>
+											<a href="/admin">Admin Panel</a>
+										</li>
+									<% } %>
+									<li>
+										<i class="fas fa-sign-out-alt"></i>
+										<a href="/logout"> Log Out</a>
+									</li>							
+								<% } %>
+								<div class="social">
+									<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+									<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
+									<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
+									<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="bar">
+						<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+							onclick="this.classList.toggle('active')">
+							<path class="line top"
+								d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+							<path class="line middle" d="m 30,50 h 40" />
+							<path class="line bottom"
+								d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+						</svg>
+					</div>
 				</div>
 			</div>
 		</div>

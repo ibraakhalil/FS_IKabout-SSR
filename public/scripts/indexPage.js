@@ -1,14 +1,12 @@
-
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////Header height shrink After Scroll///////////////////////
 //////////////////////////////////////////////////////////////////////////////
-
 (function () {
     let header = document.querySelector("section.header");
     let content = document.querySelector("section.content");
 
     let options = {
-        threshold: 0.7
+        threshold: 0.9
     }
     let shrinkHeader = function (entries) {
         if (entries[0].isIntersecting) {
@@ -24,7 +22,6 @@
 
 
 ///////////////////////////////Hire me button click///////////////////////////////////
-
 (function () {
 
     let button = document.querySelector(".content .btn-group > button")
@@ -36,8 +33,8 @@
 
 })();
 
-////////////////////////////////Header Text bottom-border Growing////////////////////////////////
 
+////////////////////////////////Header Text bottom-border Growing////////////////////////////////
 (function () {
     let span = document.querySelectorAll(".header-text span");
 
@@ -58,70 +55,59 @@
 
 
 
-
-/////////////////////////////Portfolio Data and Transition///////////////////////////////////
-
+//////////////////////Portfolio Data and Transition///////////////////////////
 (function () {
-
-    // const portfolioItemData = require("./portfolio_data")
-
-    let buttons = document.querySelectorAll(".portfolio .inner-top button")
+    let body = document.querySelector('body')
+    let categoriesBtn = document.querySelectorAll(".portfolio .inner-top button")
+    let portfolio = document.querySelector(".portfolio")
+    let modal = document.querySelector(".portfolio .modal")
     let portFolioWrapper = document.querySelector(".portfolio .wrapper")
 
-    function item(target, index) {
-        let appendItem =
-            `<p class="item-name">${portfolioItemData[target][index].name}</p>
-            <div class="hover-content">
-                <div class="wrapper-2">
-                    <div class="description">
-                    ${portfolioItemData[target][index].description}
-                    </div>
-                    <div>
-                        <a target="blank" href="${portfolioItemData[target][index].githubLink}">
-                            <button class="btn btn-primary">Github</button>
-                        </a>   
-                        <a target="blank" href="${portfolioItemData[target][index].liveLink}">
-                            <button class="btn btn-primary">Live<span></span></button>
-                        </a>
-                    </div>
-                </div>
-            </div>`;
+    function loopingPortfolioData(loopTarget) {
+        portfolioData[loopTarget].map(data => {
+            let div = document.createElement("div")
+            div.setAttribute("class", "item")
+            div.setAttribute("style", `background:url(${data.background})`)
+            div.innerHTML = `<p class="item-name">${data.name}</p>`
+            portFolioWrapper.append(div)
 
-        return appendItem;
+            div.addEventListener('click', (e) => {
+                portfolio.classList.add('active')
+                body.style.overflowY = 'hidden'
+                modal.querySelector('.top h3').innerHTML = data.name
+                modal.querySelector('img').setAttribute("src", `${data.background}`)
+                modal.querySelector('.github').setAttribute('href', data.githubLink)
+                modal.querySelector('.live').setAttribute('href', data.liveLink)
+                modal.querySelector('.description p').innerHTML = data.description
+                modal.querySelector('.used-skills ul').innerHTML = data.skills.reduce((a, b) => a + `<li>${b}</li>`, '')
+            })
+        })
     }
 
-    buttons.forEach(function (button, index) {
+    categoriesBtn.forEach((button) => {
         button.addEventListener("click", function (e) {
-            let target = e.target.innerText.toLowerCase();
-            if (target) {
-                portFolioWrapper.innerHTML = ""
-                for (let i = 0; i < portfolioItemData[target].length; i++) {
-                    let creatItem = document.createElement("div")
-                    creatItem.setAttribute("class", "item")
-                    creatItem.setAttribute("style", `background:url(${portfolioItemData[target][i].background})`)
-                    creatItem.innerHTML = item(target, i)
-
-                    portFolioWrapper.append(creatItem)
-                }
-            }
+            let target = e.target
+            portFolioWrapper.innerHTML = ""
+            categoriesBtn.forEach(btn => btn.classList.remove('active'))
+            target.classList.add('active')
+            loopingPortfolioData(target.innerText.toLowerCase())
         })
     })
-    for (let i = 0; i < portfolioItemData["frontend"].length; i++) {
-        let creatItem = document.createElement("div")
-        creatItem.setAttribute("class", "item")
-        creatItem.setAttribute("style", `background:url(${portfolioItemData["frontend"][i].background})`)
-        creatItem.innerHTML = item("frontend", i)
 
-        portFolioWrapper.append(creatItem)
-    }
-
+    loopingPortfolioData('fullstack')
+    modal.addEventListener('click', (e) => {
+        const target = e.target.className === 'modal' || e.target.className === 'inner'
+        if (target) {
+            portfolio.classList.remove('active')
+            body.style.overflowY = 'auto'
+        }
+    })
 })();
 
 
 
 
-/////////////////////////////////////Contact Form focus Effect///////////////////////////////
-
+////////////////////////////Contact Form focus Effect///////////////////////////
 
 (function () {
 
