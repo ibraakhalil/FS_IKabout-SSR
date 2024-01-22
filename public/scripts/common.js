@@ -16,20 +16,24 @@
 //////////////////////Responsive Nav menu Open-close ///////////////////////
 
 (function () {
-    let spans = document.querySelectorAll(".education .right .skill > div span");
-    let paras = document.querySelectorAll("section.education .right .skill > div div span p");
+    // let spans = document.querySelectorAll(".education .right .skill > div span");
+    // let paras = document.querySelectorAll("section.education .right .skill > div div span p");
 
-    spans.forEach(function (span, index) {
-        let data = span.dataset.filter;
-        span.style.width = `${data}%`;
-        paras[index].innerHTML = `${data}%`;
-    })
+    // spans.forEach(function (span, index) {
+    //     let data = span.dataset.filter;
+    //     span.style.width = `${data}%`;
+    //     paras[index].innerHTML = `${data}%`;
+    // })
 
     let bar = document.querySelector("section.header .bar");
     let headerMenu = document.querySelector(".header-left .header-menu");
-    bar.addEventListener("click", function (e) {
-        headerMenu.classList.toggle('active')
-    })
+    let lists = document.querySelectorAll('section.header .header-left .header-menu li')
+    let ham = document.querySelector('section.header .ham')
+    bar.addEventListener("click", () => headerMenu.classList.toggle('active'))
+    lists.forEach(list => list.addEventListener('click', () => {
+        headerMenu.classList.remove('active')
+        ham.classList.remove('active')
+    }))
 
 })();
 

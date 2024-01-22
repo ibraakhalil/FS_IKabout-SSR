@@ -622,7 +622,6 @@ section.portfolio .inner-bottom .item:hover .description {
 
 
 
-
 /******************************************
 	Contact Area
 *******************************************/
@@ -820,10 +819,6 @@ section.contact .btn-2 {
 
 
 
-
-
-
-
 /******************************************
 	Desktop Responsive
 *******************************************/
@@ -989,7 +984,7 @@ section.contact .btn-2 {
 		overflow: hidden;
 	}
 	body.checked .content .content-img img {
-		height: 97%;
+		height: 100%;
 		padding-bottom: 8rem;
 	}
 	.content .skill-img {
@@ -1116,7 +1111,8 @@ section.contact .btn-2 {
 		width: 45%;
 	}
 	.content .skill-img {
-		width: 260px;
+		width: 90%;
+		margin-top: 3rem;
 	}
 	section.contact .left {
 		padding: 2rem 2rem;

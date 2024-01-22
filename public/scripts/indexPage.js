@@ -1,6 +1,4 @@
-//////////////////////////////////////////////////////////////////////////////
 //////////////////////Header height shrink After Scroll///////////////////////
-//////////////////////////////////////////////////////////////////////////////
 (function () {
     let header = document.querySelector("section.header");
     let content = document.querySelector("section.content");
@@ -21,20 +19,7 @@
 })();
 
 
-///////////////////////////////Hire me button click///////////////////////////////////
-(function () {
-
-    let button = document.querySelector(".content .btn-group > button")
-    let marketplaceDive = document.querySelector(".content .btn-group .marketplace")
-
-    button.addEventListener("click", function () {
-        button.parentElement.classList.toggle("show");
-    })
-
-})();
-
-
-////////////////////////////////Header Text bottom-border Growing////////////////////////////////
+/////////////////////////Header Text bottom-border Growing//////////////////////
 (function () {
     let span = document.querySelectorAll(".header-text span");
 
@@ -54,8 +39,7 @@
 })();
 
 
-
-//////////////////////Portfolio Data and Transition///////////////////////////
+//////////////////////Portfolio Data and Transition/////////////////////////////
 (function () {
     let body = document.querySelector('body')
     let categoriesBtn = document.querySelectorAll(".portfolio .inner-top button")
@@ -105,10 +89,7 @@
 })();
 
 
-
-
 ////////////////////////////Contact Form focus Effect///////////////////////////
-
 (function () {
 
     let inputDivs = document.querySelectorAll("section.contact .right .input-wrapper .input")
