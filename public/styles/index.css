@@ -234,7 +234,7 @@ p.header-para {
 
 .about-me h2 {
 	color: var(--dark);
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	font-weight: 500;
 }
 .about-me .skills {
@@ -247,6 +247,7 @@ p.header-para {
 	background: var(--copyright);
 	border-radius: 3px;
 	font-size: 16px;
+	color: var(--pure);
 }
 
 section.about-me .right {
@@ -824,9 +825,7 @@ section.contact .btn-2 {
 
 
 /******************************************
-///////////////////////////////////////////
 	Desktop Responsive
-///////////////////////////////////////////
 *******************************************/
 
 
@@ -925,7 +924,8 @@ section.contact .btn-2 {
 		right: 0;
 	} */
 	.about-wrapper {
-		gap: 0rem;
+		gap: 4rem;
+		padding: 0;
 	}
 	section.about-me .right {
 		padding: 0;
@@ -981,6 +981,9 @@ section.contact .btn-2 {
 	.header-text {
 		font-size: 6vw;
 	}
+	p.header-para {
+		width: 90%;
+	}
 	.content {
 		height: calc(100vh - 140px);
 		overflow: hidden;
@@ -1023,7 +1026,6 @@ section.contact .btn-2 {
 	}
 	.about-wrapper {
 		grid-template-columns: 1fr;
-		gap: 1rem;
 	}
 	.about-me .left img {
 		width: 100%;
@@ -1038,6 +1040,9 @@ section.contact .btn-2 {
 	}
 	section.about-me .right .social {
 		text-align: center;
+	}
+	.about-me .skills__skill {
+		font-size: 14px;
 	}
 	.services ul {
 		grid-template-columns: 1fr;
@@ -1058,6 +1063,41 @@ section.contact .btn-2 {
 	}
 	section.portfolio .inner-bottom .wrapper {
 		grid-template-columns: repeat(1,1fr);
+	}
+	.portfolio .modal > div {
+		width: 90%;
+	}
+	.portfolio .modal-container {
+		padding: 1rem;
+		margin: 2rem auto;
+		padding-bottom: 2rem;
+	}
+	.modal .photos {
+		height: auto;
+	}
+	.modal .photos img {
+		aspect-ratio: 3/2;
+	}
+	.modal .skills {
+		gap: 0.8rem;
+	}
+	.modal .used-skills li {
+		padding: 5px 0.7rem;
+		font-size: 13px;
+		font-weight: 300;
+	}
+	section.portfolio .inner-top .btn-group {
+		overflow: auto;
+		gap: 10px;
+	}
+	section.portfolio .inner-top .btn-group button {
+		padding: 7px 0.8rem;
+		font-size: 12px;
+		margin: 0;
+	}
+	section.portfolio .inner-top .btn-group button.active {
+		font-size: 13px;
+		padding: 8px 1.5rem;
 	}
 	section.portfolio .inner-bottom .item .item-name {
 		font-size: 3vw;

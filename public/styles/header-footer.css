@@ -335,17 +335,18 @@ footer .copyright p {
 	.header .header-left .header-menu {
 		background: var(--dropdown);
 		position: absolute;
-		top: 100%;
+		top: 72%;
 		box-shadow: 0 7px 11px 0 var(--shadow);
 		right: 0;
 		transform: translateX(100%);
-		min-height: calc(100vh - 120px);
+		min-height: calc(100vh - 90px);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 	.header.scrolled .header-left .header-menu {
 		min-height: calc(100vh - 80px);
+		top: 100%;
 	}
 	.header-left .header-menu.active {
 		transform: translateX(0%);

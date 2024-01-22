@@ -1,7 +1,5 @@
 
 
-
-
 //////////////////////////////Setting cog Dropdown////////////////////////////////
 
 (function () {
@@ -59,10 +57,10 @@
 
 ///////////////////////////////Flash Message Timeout///////////////////////////////////
 
-// (function () {
-//     const flashMessage = document.querySelector(".flash-message")
+(function () {
+    const flashMessage = document.querySelector(".flash-message")
 
-//     setTimeout(() => {
-//         flashMessage.style.display = "none"
-//     }, 5000);
-// })()
+    flashMessage && setTimeout(() => {
+        flashMessage.style.display = "none"
+    }, 4900);
+})()
