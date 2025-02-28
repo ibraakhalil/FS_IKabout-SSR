@@ -46,7 +46,7 @@ section.content .introduce {
 }
 .introduce h1 {
 	font-family: 'Poppins', sans-serif;
-	font-size: 7.5vw;
+	font-size: 80px;
 	word-spacing: 3px;
 	text-shadow: 10px 10px 10px #22222215;
 	color: #03ADFF;
@@ -1117,9 +1117,5 @@ section.contact .btn-2 {
 	section.contact .left {
 		padding: 2rem 2rem;
 	}
-	
+
 }
-
-
-
-
