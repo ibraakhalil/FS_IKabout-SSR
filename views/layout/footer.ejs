@@ -1,16 +1,48 @@
-<footer>
-	<div class="wrapper container">
-		<div class="logo">
-			<img src="./resource/icon/IK.png" alt="">
-		</div>
-		
-		<div class="social">
-			<div class="icon">
-				<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-				<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i class="fab fa-twitter-square"></i></a>
-				<a href="https://github.com/ibraakhalil" target="_blank"><i class="fab fa-github-square"></i></a>
-				<a href="./login.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+<footer class="site-footer">
+	<div class="container">
+		<div class="footer-content">
+			<!-- Brand & Social -->
+			<div class="footer-brand">
+				<a href="/" class="footer-logo">
+					<img src="/resource/icon/IK.png" alt="Ibrahim Khalil">
+					<span>Ibrahim Khalil</span>
+				</a>
+				<p class="footer-tagline">Fullstack Developer crafting modern web experiences.</p>
 			</div>
+
+			<!-- Quick Links -->
+			<nav class="footer-nav">
+				<a href="/">Home</a>
+				<a href="/#about-me">About</a>
+				<a href="/#service">Services</a>
+				<a href="/#portfolio">Portfolio</a>
+				<a href="/#contact">Contact</a>
+			</nav>
+
+			<!-- Social Links -->
+			<div class="footer-social">
+				<a href="https://github.com/ibraakhalil" target="_blank" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/ibrathekhalil/" target="_blank" aria-label="LinkedIn">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://twitter.com/ibra_khalil5425" target="_blank" aria-label="Twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="mailto:ibrathekhalil@gmail.com" aria-label="Email">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="footer-bottom">
+			<p>© <span id="currentYear">2024</span> Ibrahim Khalil. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>
+
+<script>
+	document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>

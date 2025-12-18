@@ -9,7 +9,7 @@
 	<title> Ibrahim Khalil </title>
 </head>
 
-<body class="">
+<body class="checked">
 	<%- include("../layout/header") %>
 		<%- include("../layout/flash") %>
 
@@ -17,156 +17,402 @@
 				<div class="container">
 					<div class="content-wrapper">
 						<div class="introduce">
-							<h2> HEY ALL! I'M </h2>
-							<h1><span>IBRAHIM</span> KHALIL </h1><br />
-							<h4> Full-Stack Developer </h4>
-							<img class="skill-img" src="https://i.postimg.cc/c48Pyk8Y/mern-img.png" alt="my-skills">
-							<div class="btn-group">
-								<button class="btn btn-secondary"> <a href="/resource/document/cv.pdf"
-										download="">Download CV</a> <span></span></button>
+							<!-- Animated Greeting -->
+							<div class="hero-badge">
+								<span class="status-dot"></span>
+								<span>Available for opportunities</span>
+							</div>
+
+							<h2 class="hero-greeting">Hello, I'm</h2>
+							<h1 class="hero-name"><span>IBRAHIM</span> KHALIL</h1>
+
+							<!-- Role with Typing Effect -->
+							<div class="hero-role">
+								<h4>Fullstack Web Developer</h4>
+								<span class="hero-experience">@ MaxCode Lab, Dhaka</span>
+							</div>
+
+							<!-- Brief Description -->
+							<p class="hero-description">
+								Building scalable web applications with <strong>Next.js</strong>, <strong>TypeScript</strong>,
+								and modern backend technologies. Passionate about clean code and exceptional user experiences.
+							</p>
+
+							<!-- Tech Stack Pills -->
+							<div class="hero-tech-stack">
+								<span class="tech-pill">Next.js</span>
+								<span class="tech-pill">TypeScript</span>
+								<span class="tech-pill">Bun</span>
+								<span class="tech-pill">Drizzle</span>
+								<span class="tech-pill">PostgreSQL</span>
+							</div>
+
+							<!-- Social Links -->
+							<div class="hero-social">
+								<a href="https://github.com/ibraakhalil" target="_blank" class="social-link" aria-label="GitHub">
+									<i class="fab fa-github"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/ibrathekhalil/" target="_blank" class="social-link" aria-label="LinkedIn">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+								<a href="mailto:ibrathekhalil@gmail.com" class="social-link" aria-label="Email">
+									<i class="fas fa-envelope"></i>
+								</a>
+							</div>
+
+							<!-- CTA Buttons -->
+							<div class="hero-cta">
+								<a href="/resource/document/cv.pdf" download="" class="btn btn-primary hero-btn">
+									<i class="fas fa-download"></i>
+									Download CV
+								</a>
+								<a href="#portfolio" class="btn btn-secondary hero-btn hero-btn-outline">
+									<i class="fas fa-briefcase"></i>
+									View Projects
+								</a>
 							</div>
 						</div>
 						<div class="content-img">
-							<img src="https://i.postimg.cc/bJhm7Fg3/dark-face.png">
+							<img src="https://i.postimg.cc/bJhm7Fg3/dark-face.png" alt="Ibrahim Khalil">
 						</div>
 					</div>
+				</div>
+
+				<!-- Scroll Indicator -->
+				<div class="scroll-indicator">
+					<span class="scroll-text">Scroll</span>
+					<div class="scroll-line"></div>
 				</div>
 			</section>
 
 			<section id="about-me" class="about-me">
 				<div class="container">
-					<div class="about-top">
-						<h1 class="header-text"><span>About me</span></h1>
-						<p class="header-para">Here you will find more information about me, what I do, and my current
-							skills mostly in
-							terms of programming and technology </p>
+					<!-- Section Header -->
+					<div class="about-header">
+						<span class="section-label">About Me</span>
+						<h2 class="section-title">Turning Ideas Into <span>Digital Reality</span></h2>
+						<p class="section-subtitle">
+							Fullstack Developer with expertise in building modern, scalable web applications
+						</p>
 					</div>
 
-					<div class="about-wrapper">
-						<div class="right">
-							<div class="description">
-								<h2>Get to know me!</h2>
+					<div class="about-content">
+						<!-- Left Column - About Info -->
+						<div class="about-info">
+							<!-- Experience Card -->
+							<div class="experience-card">
+								<div class="experience-header">
+									<div class="company-logo">
+										<i class="fas fa-code"></i>
+									</div>
+									<div class="experience-details">
+										<h3>Fullstack Web Developer</h3>
+										<p class="company-name">MaxCode Lab, Dhaka</p>
+										<span class="experience-date">
+											<i class="far fa-calendar-alt"></i>
+											February 2024 - Present
+										</span>
+									</div>
+								</div>
+								<ul class="experience-highlights">
+									<li>
+										<i class="fas fa-check"></i>
+										Developed responsive web applications using Next.js & TypeScript
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Optimized performance for faster load times & better UX
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Built scalable backends with Bun, Drizzle & tRPC
+									</li>
+								</ul>
+							</div>
+
+							<!-- Description -->
+							<div class="about-description">
 								<p>
-                                    As a Full-Stack Developer with a passion for modern web technologies, I specialize in building scalable, user-centric
-                                    applications using React.js, Next.js, and TypeScript on the frontend, paired with Express.js, GraphQL, and both SQL &
-                                    NoSQL databases on the backend.
-                                    With expertise in Tailwind CSS for rapid styling, Framer Motion for delightful animations, and Figma for design
-                                    collaboration, I turn concepts into seamless digital experiences.
-                                    My DevOps experience spans Docker, Vercel, AWS, GCP, and Oracle Cloud, with automated workflows built using GitHub
-                                    Actions and CI/CD pipelines.
-                                    Whether building from scratch or scaling existing systems, I bring clean code, creative problem-solving, and a focus on
-                                    performance to every project.
+									I'm a <strong>passionate Full-Stack Developer</strong> who loves transforming complex problems into elegant,
+									user-friendly solutions. With expertise in modern web technologies, I specialize in building
+									<strong>scalable applications</strong> that deliver exceptional user experiences.
+								</p>
+								<p>
+									From crafting pixel-perfect frontends to architecting robust backend systems,
+									I bring a <strong>holistic approach</strong> to every project. My focus is on writing clean,
+									maintainable code while staying current with the latest industry trends.
 								</p>
 							</div>
 
-							<div class="follow_me">
-								<p>Follow me on:</p>
-								<div class="social">
-									<a href="https://facebook.com/ibraa.khalil/" target="_blank"><i
-											class="fab fa-facebook-square"></i></a>
-									<a href="https://twitter.com/ibra_khalil5425" target="_blank"><i
-											class="fab fa-twitter-square"></i></a>
-									<a href="https://github.com/ibraakhalil" target="_blank"><i
-											class="fab fa-github-square"></i></a>
-									<a href="https://www.linkedin.com/in/ibrathekhalil/" target="_blank"><i
-											class="fab fa-linkedin"></i></a>
+							<!-- Stats -->
+							<div class="about-stats">
+								<div class="stat-item">
+									<span class="stat-number">1+</span>
+									<span class="stat-label">Years Experience</span>
+								</div>
+								<div class="stat-item">
+									<span class="stat-number">10+</span>
+									<span class="stat-label">Projects Completed</span>
+								</div>
+								<div class="stat-item">
+									<span class="stat-number">5+</span>
+									<span class="stat-label">Happy Clients</span>
+								</div>
+							</div>
+
+							<!-- Social Links -->
+							<div class="about-social">
+								<span class="social-label">Connect with me:</span>
+								<div class="social-icons">
+									<a href="https://github.com/ibraakhalil" target="_blank" aria-label="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/ibrathekhalil/" target="_blank" aria-label="LinkedIn">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+									<a href="https://twitter.com/ibra_khalil5425" target="_blank" aria-label="Twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+									<a href="https://facebook.com/ibraa.khalil/" target="_blank" aria-label="Facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="left">
-							<h2>My Skills</h2>
-                            <div class="skills">
-                                <div class="skills__skill">Next.js</div>
-                                <div class="skills__skill">React.js</div>
-                                <div class="skills__skill">TypeScript</div>
-                                <div class="skills__skill">Express.js</div>
-                                <div class="skills__skill">GraphQL</div>
-                                <div class="skills__skill">MongoDB</div>
-                                <div class="skills__skill">SQL</div>
-                                <div class="skills__skill">Tailwind CSS</div>
-                                <div class="skills__skill">Framer Motion</div>
-                                <div class="skills__skill">Figma</div>
-                                <div class="skills__skill">Redux/Zustand</div>
-                                <div class="skills__skill">Socket.io</div>
-                                <div class="skills__skill">CI/CD</div>
-                                <div class="skills__skill">Git</div>
-                                <div class="skills__skill">Github Actions</div>
-                                <div class="skills__skill">Docker</div>
-                                <div class="skills__skill">Vercel</div>
-                                <div class="skills__skill">AWS/GCP</div>
-                                <div class="skills__skill">Oracle Cloud</div>
-                                <div class="skills__skill">Notion</div>
-                                <div class="skills__skill">Copilot</div>
-                                <div class="skills__skill">Cursor</div>
-                                <div class="skills__skill">SEO</div>
-                                <div class="skills__skill">Terminal</div>
-                            </div>
+
+						<!-- Right Column - Skills -->
+						<div class="about-skills">
+							<h3 class="skills-heading">
+								<i class="fas fa-tools"></i>
+								Tech Stack & Skills
+							</h3>
+
+							<!-- Frontend Skills -->
+							<div class="skill-category">
+								<h4 class="category-title">
+									<span class="category-icon frontend"></span>
+									Frontend
+								</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Next.js</span>
+									<span class="skill-tag">React.js</span>
+									<span class="skill-tag">TypeScript</span>
+									<span class="skill-tag">Tailwind CSS</span>
+									<span class="skill-tag">Framer Motion</span>
+									<span class="skill-tag">Zustand</span>
+									<span class="skill-tag">Tanstack Query</span>
+								</div>
+							</div>
+
+							<!-- Backend Skills -->
+							<div class="skill-category">
+								<h4 class="category-title">
+									<span class="category-icon backend"></span>
+									Backend
+								</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Bun</span>
+									<span class="skill-tag">Express.js</span>
+									<span class="skill-tag">tRPC</span>
+									<span class="skill-tag">GraphQL</span>
+									<span class="skill-tag">Drizzle ORM</span>
+									<span class="skill-tag">PostgreSQL</span>
+									<span class="skill-tag">MongoDB</span>
+								</div>
+							</div>
+
+							<!-- DevOps & Tools -->
+							<div class="skill-category">
+								<h4 class="category-title">
+									<span class="category-icon devops"></span>
+									DevOps & Tools
+								</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Docker</span>
+									<span class="skill-tag">Git</span>
+									<span class="skill-tag">GitHub Actions</span>
+									<span class="skill-tag">CI/CD</span>
+									<span class="skill-tag">Vercel</span>
+									<span class="skill-tag">AWS / GCP</span>
+									<span class="skill-tag">Oracle Cloud</span>
+								</div>
+							</div>
+
+							<!-- Tools & Productivity -->
+							<div class="skill-category">
+								<h4 class="category-title">
+									<span class="category-icon tools"></span>
+									AI & Productivity
+								</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Github Copilot</span>
+									<span class="skill-tag">Claude Code</span>
+									<span class="skill-tag">Cursor</span>
+									<span class="skill-tag">Figma</span>
+									<span class="skill-tag">Storybook</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="portfolio" class="portfolio">
+			<section id="portfolio" class="projects-section">
 				<div class="container">
-					<div class="modal">
-						<div class="inner">
-							<div class="modal-container">
-								<div class="top">
-									<h3></h3>
-									<button class="close">Close</button>
-								</div>
-								<div class="modal-content">
-									<div class="photos">
-										<img src="">
-									</div>
-									<div class="link">
-										<a class="github"><i class="fab fa-github"></i>Github</a>
-										<a class="live"><i class="fas fa-link"></i>Live</a>
-									</div>
-									<div class="description">
-										<div class="overview">
-											<h4>About</h4>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-												suscipit laudantium magni, nihil neque corrupti sit molestias
-												consequuntur expedita fugiat officiis cumque nisi magnam earum maiores
-												aspernatur perferendis porro illum accusamus eligendi sint libero eaque
-												omnis. Fugit, itaque, at sunt, consectetur repellat reiciendis facilis
-												iure quasi sint debitis eligendi neque?
-											</p>
-										</div>
-										<div class="feature">
-											<h4>Project Feature</h4>
-											<p>Admin Panel , Manager Panel, Profile Page, Notice Board, MealChart,
-												Landing Page, Deposite, Expense, Auto Meal Rate Calculate etc</p>
-										</div>
-										<div class="used-skills">
-											<h4>Used Skills</h4>
-											<ul class="skills">
-											</ul>
-										</div>
+					<!-- Section Header -->
+					<div class="projects-header">
+						<span class="section-label">Portfolio</span>
+						<h2 class="section-title">Featured <span>Projects</span></h2>
+						<p class="section-subtitle">
+							A collection of projects I've built - from spiritual apps to productivity platforms
+						</p>
+					</div>
+
+					<!-- Projects Grid -->
+					<div class="projects-grid">
+						<!-- Project 1: Dua & Ruqyah -->
+						<article class="project-card featured">
+							<div class="project-image">
+								<div class="project-overlay">
+									<div class="overlay-content">
+										<a href="https://duaruqyah.com" target="_blank" class="overlay-btn primary">
+											<i class="fas fa-external-link-alt"></i>
+											Live Demo
+										</a>
 									</div>
 								</div>
+								<div class="project-placeholder">
+									<i class="fas fa-moon"></i>
+								</div>
+								<span class="project-badge">Featured</span>
 							</div>
-						</div>
+							<div class="project-content">
+								<div class="project-header">
+									<h3 class="project-title">Dua & Ruqyah</h3>
+									<p class="project-type">Spiritual Web App</p>
+								</div>
+								<p class="project-description">
+									A multilingual spiritual web application with a collection of authentic duas and ruqyah.
+									Features seamless localization with nextintl, ensuring a responsive and user-friendly experience
+									for users worldwide.
+								</p>
+								<div class="project-tech">
+									<span class="tech-tag">Next.js</span>
+									<span class="tech-tag">TypeScript</span>
+									<span class="tech-tag">Tailwind</span>
+									<span class="tech-tag">Zustand</span>
+									<span class="tech-tag">nextintl</span>
+								</div>
+								<div class="project-links">
+									<a href="https://duaruqyah.com" target="_blank" class="project-link primary">
+										<i class="fas fa-external-link-alt"></i>
+										Visit Site
+									</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- Project 2: Quran Mazid -->
+						<article class="project-card featured">
+							<div class="project-image">
+								<div class="project-overlay">
+									<div class="overlay-content">
+										<a href="https://quranmazid.com" target="_blank" class="overlay-btn primary">
+											<i class="fas fa-external-link-alt"></i>
+											Live Demo
+										</a>
+									</div>
+								</div>
+								<div class="project-placeholder">
+									<i class="fas fa-book-quran"></i>
+								</div>
+								<span class="project-badge">Featured</span>
+							</div>
+							<div class="project-content">
+								<div class="project-header">
+									<h3 class="project-title">Quran Mazid</h3>
+									<p class="project-type">Learning Platform</p>
+								</div>
+								<p class="project-description">
+									A modern Quran learning platform with high performance and seamless localization.
+									Built with a focus on accessibility and responsive design to provide an exceptional
+									learning experience across all devices.
+								</p>
+								<div class="project-tech">
+									<span class="tech-tag">Next.js</span>
+									<span class="tech-tag">TypeScript</span>
+									<span class="tech-tag">Bun</span>
+									<span class="tech-tag">tRPC</span>
+									<span class="tech-tag">Drizzle</span>
+									<span class="tech-tag">TanStack Query</span>
+								</div>
+								<div class="project-links">
+									<a href="https://quranmazid.com" target="_blank" class="project-link primary">
+										<i class="fas fa-external-link-alt"></i>
+										Visit Site
+									</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- Project 3: Mess Mate -->
+						<article class="project-card">
+							<div class="project-image">
+								<div class="project-overlay">
+									<div class="overlay-content">
+										<a href="https://github.com/ibraakhalil/mess-mate" target="_blank" class="overlay-btn secondary">
+											<i class="fab fa-github"></i>
+											Code
+										</a>
+										<a href="#" target="_blank" class="overlay-btn primary">
+											<i class="fas fa-external-link-alt"></i>
+											Demo
+										</a>
+									</div>
+								</div>
+								<div class="project-placeholder">
+									<i class="fas fa-utensils"></i>
+								</div>
+							</div>
+							<div class="project-content">
+								<div class="project-header">
+									<h3 class="project-title">Mess Mate</h3>
+									<p class="project-type">Full-Stack Application</p>
+								</div>
+								<p class="project-description">
+									A comprehensive meal tracking and management platform for shared living spaces.
+									Features user authentication, expense tracking, meal rate calculations,
+									and streamlined user workflows for efficient mess management.
+								</p>
+								<div class="project-tech">
+									<span class="tech-tag">Next.js</span>
+									<span class="tech-tag">Bun</span>
+									<span class="tech-tag">Hono</span>
+									<span class="tech-tag">PostgreSQL</span>
+									<span class="tech-tag">Drizzle</span>
+									<span class="tech-tag">Auth.js</span>
+								</div>
+								<div class="project-links">
+									<a href="https://github.com/ibraakhalil/mess-mate" target="_blank" class="project-link secondary">
+										<i class="fab fa-github"></i>
+										Source Code
+									</a>
+									<a href="#" target="_blank" class="project-link primary">
+										<i class="fas fa-external-link-alt"></i>
+										Live Demo
+									</a>
+								</div>
+							</div>
+						</article>
 					</div>
-					<div class="portfolio-top">
-						<h1 class="header-text"><span>Projects</span></h1>
-						<p class="header-para">Here are a few past design projects I've worked on. Want to see more?
-							Email me.</p>
-					</div>
-					<div class="portfolio-inner">
-						<div class="inner-top">
-							<div class="btn-group">
-								<button class="btn btn-1 active">FullStack</button>
-								<button class="btn btn-2">Frontend</button>
-								<button class="btn btn-3">Javascript</button>
-							</div>
-						</div>
-						<div class="inner-bottom">
-							<div class="wrapper">
-							</div>
-						</div>
+
+					<!-- View More CTA -->
+					<div class="projects-cta">
+						<p class="cta-text">Interested in seeing more of my work?</p>
+						<a href="https://github.com/ibraakhalil" target="_blank" class="cta-button">
+							<i class="fab fa-github"></i>
+							View GitHub Profile
+						</a>
 					</div>
 				</div>
 			</section>
@@ -252,140 +498,266 @@
 				</div>
 			</section> -->
 
-            <section id="service" class="services">
-                <div class="container"></div>
-                    <div class="services-top">
-                        <h1 class="header-text"><span>My Services</span></h1>
+            <section id="service" class="services-section">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="services-header">
+                        <span class="section-label">What I Do</span>
+                        <h2 class="section-title">Services I <span>Offer</span></h2>
+                        <p class="section-subtitle">
+                            From concept to deployment - I provide end-to-end solutions for your digital needs
+                        </p>
                     </div>
-                    <ul>
-                        <li>
-                            <div class="icon">
+
+                    <!-- Services Grid -->
+                    <div class="services-grid">
+                        <!-- Service 1: Frontend Development -->
+                        <article class="service-card">
+                            <div class="service-icon frontend">
                                 <i class="fab fa-react"></i>
                             </div>
-                            <h3>Modern Frontend</h3>
-                            <p>Building responsive, performant web applications using React.js, Next.js, and TypeScript with beautiful animations through Framer Motion.</p>
-                        </li>
-                        <li>
-                            <div class="icon">
+                            <div class="service-content">
+                                <h3 class="service-title">Frontend Development</h3>
+                                <p class="service-description">
+                                    Building responsive, performant web applications using React.js, Next.js, and TypeScript
+                                    with beautiful animations through Framer Motion and Tailwind CSS.
+                                </p>
+                                <div class="service-tags">
+                                    <span>React</span>
+                                    <span>Next.js</span>
+                                    <span>TypeScript</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Service 2: Backend Development -->
+                        <article class="service-card">
+                            <div class="service-icon backend">
                                 <i class="fas fa-server"></i>
                             </div>
-                            <h3>Backend Solutions</h3>
-                            <p>Crafting robust APIs and server architectures using Express.js and GraphQL, with both SQL and MongoDB database integration.</p>
-                        </li>
-                        <li>
-                            <div class="icon">
+                            <div class="service-content">
+                                <h3 class="service-title">Backend Development</h3>
+                                <p class="service-description">
+                                    Crafting robust APIs and server architectures using Bun, Express.js, tRPC and GraphQL,
+                                    with PostgreSQL and MongoDB database integration.
+                                </p>
+                                <div class="service-tags">
+                                    <span>Bun</span>
+                                    <span>tRPC</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Service 3: Full-Stack Applications -->
+                        <article class="service-card">
+                            <div class="service-icon fullstack">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Full-Stack Applications</h3>
+                                <p class="service-description">
+                                    End-to-end web application development with modern tech stacks, authentication,
+                                    state management, and optimized performance for the best user experience.
+                                </p>
+                                <div class="service-tags">
+                                    <span>Drizzle</span>
+                                    <span>Auth.js</span>
+                                    <span>Zustand</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Service 4: UI/UX Implementation -->
+                        <article class="service-card">
+                            <div class="service-icon design">
                                 <i class="fas fa-paint-brush"></i>
                             </div>
-                            <h3>UI/UX Design</h3>
-                            <p>Creating modern, clean interfaces using Tailwind CSS and Figma, with state management through Redux or Zustand for seamless user experiences.</p>
-                        </li>
-                        <li>
-                            <div class="icon">
+                            <div class="service-content">
+                                <h3 class="service-title">UI/UX Implementation</h3>
+                                <p class="service-description">
+                                    Transforming Figma designs into pixel-perfect, responsive interfaces with
+                                    modern styling, micro-animations, and seamless user interactions.
+                                </p>
+                                <div class="service-tags">
+                                    <span>Tailwind</span>
+                                    <span>Framer Motion</span>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Service 5: Cloud & Deployment -->
+                        <article class="service-card">
+                            <div class="service-icon cloud">
                                 <i class="fas fa-cloud"></i>
                             </div>
-                            <h3>Cloud Deployment</h3>
-                            <p>Deploying and managing applications on AWS, GCP, Oracle Cloud, and Vercel with automated CI/CD pipelines.</p>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fab fa-docker"></i>
+                            <div class="service-content">
+                                <h3 class="service-title">Cloud & Deployment</h3>
+                                <p class="service-description">
+                                    Deploying and managing applications on Vercel, AWS, GCP, and Oracle Cloud
+                                    with automated CI/CD pipelines and optimized infrastructure.
+                                </p>
+                                <div class="service-tags">
+                                    <span>Vercel</span>
+                                    <span>AWS</span>
+                                    <span>Docker</span>
+                                </div>
                             </div>
-                            <h3>DevOps Solutions</h3>
-                            <p>Containerizing applications with Docker, implementing automated workflows with GitHub Actions, and maintaining efficient development processes.</p>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fas fa-code-branch"></i>
+                        </article>
+
+                        <!-- Service 6: Performance Optimization -->
+                        <article class="service-card">
+                            <div class="service-icon performance">
+                                <i class="fas fa-tachometer-alt"></i>
                             </div>
-                            <h3>Development Workflow</h3>
-                            <p>Utilizing modern tools like GitHub Copilot, Cursor, and Notion for efficient code development, collaboration, and project management.</p>
-                        </li>
-                    </ul>
+                            <div class="service-content">
+                                <h3 class="service-title">Performance Optimization</h3>
+                                <p class="service-description">
+                                    Optimizing web applications for speed, SEO, and Core Web Vitals with
+                                    code splitting, caching strategies, and efficient data fetching.
+                                </p>
+                                <div class="service-tags">
+                                    <span>SEO</span>
+                                    <span>Core Vitals</span>
+                                    <span>TanStack Query</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="services-cta">
+                        <div class="cta-card">
+                            <div class="cta-content">
+                                <h3>Have a project in mind?</h3>
+                                <p>Let's work together to bring your ideas to life</p>
+                            </div>
+                            <a href="#contact" class="cta-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-			<section id="contact" class="contact">
+			<section id="contact" class="contact-section">
 				<div class="container">
-					<!-- <h1 class="header-text"><span>Contact Me</span></h1> -->
-					<div class="contact-wrapper">
-						<div class="left">
-							<div class="left-header">
-								<h2>Contact Information</h2>
-								<p>Are you looking for a full-stack developer in MERN Stack? Please Contact me </p>
+					<!-- Section Header -->
+					<div class="contact-header">
+						<span class="section-label">Get In Touch</span>
+						<h2 class="section-title">Let's Work <span>Together</span></h2>
+						<p class="section-subtitle">
+							Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+						</p>
+					</div>
+
+					<div class="contact-content">
+						<!-- Left Column - Contact Info -->
+						<div class="contact-info">
+							<!-- Info Cards -->
+							<div class="info-cards">
+								<!-- Email Card -->
+								<a href="mailto:ibrathekhalil@gmail.com" class="info-card">
+									<div class="info-icon email">
+										<i class="fas fa-envelope"></i>
+									</div>
+									<div class="info-details">
+										<h4>Email Me</h4>
+										<p>ibrathekhalil@gmail.com</p>
+									</div>
+									<i class="fas fa-arrow-right info-arrow"></i>
+								</a>
+
+								<!-- GitHub Card -->
+								<a href="https://github.com/ibraakhalil" target="_blank" class="info-card">
+									<div class="info-icon github">
+										<i class="fab fa-github"></i>
+									</div>
+									<div class="info-details">
+										<h4>GitHub</h4>
+										<p>github.com/ibraakhalil</p>
+									</div>
+									<i class="fas fa-arrow-right info-arrow"></i>
+								</a>
+
+								<!-- LinkedIn Card -->
+								<a href="https://www.linkedin.com/in/ibrathekhalil/" target="_blank" class="info-card">
+									<div class="info-icon linkedin">
+										<i class="fab fa-linkedin-in"></i>
+									</div>
+									<div class="info-details">
+										<h4>LinkedIn</h4>
+										<p>linkedin.com/in/ibrathekhalil</p>
+									</div>
+									<i class="fas fa-arrow-right info-arrow"></i>
+								</a>
 							</div>
-							<div class="left-info">
-								<div>
-									<i class="fas fa-map-marker-alt"></i>
-									<div class="info">
-										<p>Birahimpur, Bosontopur-3864, Noakhali, Bangladesh</p>
-									</div>
+
+							<!-- Availability Card -->
+							<div class="availability-card">
+								<div class="availability-header">
+									<span class="status-dot"></span>
+									<span>Currently Available</span>
 								</div>
-								<div>
-									<i class="fas fa-envelope"></i>
-									<div class="info">
-										<p>
-											<a href="mailto:ibkhalil5425@gmail.com"> ibkhalil5425@gmail.com </a>
-										</p>
-										<p>
-											<a href="mailto:ibrathekhalil@gmail.com"> ibrathekhalil@gmail.com </a>
-										</p>
-									</div>
-								</div>
-								<div>
-									<i class="fas fa-phone"></i>
-									<div class="info">
-										<p>
-											<a href="tel:+8801747015688">+8801747015688</a>
-										</p>
-										<p>
-											<a href="tel:+8801571761114">+8801571761114</a>
-										</p>
-									</div>
+								<p>Open to full-time positions, freelance projects, and exciting collaborations.</p>
+								<div class="response-time">
+									<i class="far fa-clock"></i>
+									<span>Usually responds within 24 hours</span>
 								</div>
 							</div>
 						</div>
-						<div class="right">
-							<h2>Get in Touch</h2>
-							<p>Any question or anything to know? Just write a message to me</p>
-							<form action="/" method="post">
-								<div class="input-wrapper">
-									<div>
-										<label for="name">Name : </label>
-										<div class="input">
+
+						<!-- Right Column - Contact Form -->
+						<div class="contact-form-wrapper">
+							<div class="form-header">
+								<h3>Send a Message</h3>
+								<p>Fill out the form below and I'll get back to you as soon as possible</p>
+							</div>
+							<form action="/" method="post" class="contact-form">
+								<div class="form-row">
+									<div class="form-group">
+										<label for="name">Your Name</label>
+										<div class="input-wrapper">
 											<i class="far fa-user"></i>
-											<input type="text" name="name" required>
+											<input type="text" name="name" id="name" placeholder="Ibrahim Khalil" required>
 										</div>
 										<div class="error-feedback">
-											<p>
-												<%= error.name %>
-											</p>
+											<p><%= error.name %></p>
 										</div>
 									</div>
-									<div>
-										<label for="email">Email : </label>
-										<div class="input">
+									<div class="form-group">
+										<label for="email">Your Email</label>
+										<div class="input-wrapper">
 											<i class="far fa-envelope"></i>
-											<input type="email" name="email" required>
+											<input type="email" name="email" id="email" placeholder="you@example.com" required>
 										</div>
 										<div class="error-feedback">
-											<p>
-												<%= error.email %>
-											</p>
+											<p><%= error.email %></p>
 										</div>
 									</div>
 								</div>
-								<div class="text-area">
-									<label for="message">Message : </label>
-									<textarea name="message" id="" cols="30" rows="5"></textarea>
+								<div class="form-group">
+									<label for="subject">Subject</label>
+									<div class="input-wrapper">
+										<i class="far fa-file-alt"></i>
+										<input type="text" name="subject" id="subject" placeholder="Project Discussion">
+									</div>
 								</div>
-								<div class="error-feedback">
-									<p>
-										<%= error.message %>
-									</p>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<div class="textarea-wrapper">
+										<textarea name="message" id="message" rows="5" placeholder="Tell me about your project, timeline, and budget..." required></textarea>
+									</div>
+									<div class="error-feedback">
+										<p><%= error.message %></p>
+									</div>
 								</div>
-								<div class="btn-2">
-									<button class="btn btn-primary">Submit <span></span></button>
-								</div>
+								<button type="submit" class="submit-btn">
+									<span>Send Message</span>
+									<i class="fas fa-paper-plane"></i>
+								</button>
 							</form>
 						</div>
 					</div>

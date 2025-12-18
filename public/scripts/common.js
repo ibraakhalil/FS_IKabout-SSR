@@ -1,70 +1,73 @@
 
-
-//////////////////////////////Setting cog Dropdown////////////////////////////////
-
-(function () {
-    let setting = document.querySelector("section.header .setting i");
-    let setting2 = document.querySelector("section.header .setting");
-
-    setting.addEventListener("click", () => {
-        setting2.classList.toggle("show")
-    })
-})();
-
-
-
-//////////////////////Responsive Nav menu Open-close ///////////////////////
+//////////////////////////////Header Scroll Effect////////////////////////////////
 
 (function () {
-    // let spans = document.querySelectorAll(".education .right .skill > div span");
-    // let paras = document.querySelectorAll("section.education .right .skill > div div span p");
+    const header = document.querySelector('.site-header');
 
-    // spans.forEach(function (span, index) {
-    //     let data = span.dataset.filter;
-    //     span.style.width = `${data}%`;
-    //     paras[index].innerHTML = `${data}%`;
-    // })
+    if (header) {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
 
-    let bar = document.querySelector("section.header .bar");
-    let headerMenu = document.querySelector(".header-left .header-menu");
-    let lists = document.querySelectorAll('section.header .header-left .header-menu li')
-    let ham = document.querySelector('section.header .ham')
-    bar.addEventListener("click", () => headerMenu.classList.toggle('active'))
-    lists.forEach(list => list.addEventListener('click', () => {
-        headerMenu.classList.remove('active')
-        ham.classList.remove('active')
-    }))
-
-})();
-
-
-
-///////////////////////////////Theme switcher///////////////////////////////////
-
-(function () {
-    const isTheme = localStorage.getItem('theme')
-    if (isTheme === null) {
-        localStorage.setItem('theme', 'checked')
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
     }
+})();
 
-    const body = document.querySelector('body')
-    const themeSwitch = document.querySelector(".theme-switch .switch")
-    const theme = localStorage.getItem('theme')
-    body.classList = theme
 
-    themeSwitch.addEventListener('click', (e) => {
-        body.classList.toggle('checked')
-        localStorage.setItem('theme', `${theme == '' ? 'checked' : ""}`)
-    })
+//////////////////////////////Mobile Menu Toggle////////////////////////////////
+
+(function () {
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    const mobileCta = document.querySelector('.mobile-cta');
+
+    if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        if (mobileCta) {
+            mobileCta.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    }
 })();
 
 
 ///////////////////////////////Flash Message Timeout///////////////////////////////////
 
 (function () {
-    const flashMessage = document.querySelector(".flash-message")
+    const flashMessage = document.querySelector(".flash-message");
 
-    flashMessage && setTimeout(() => {
-        flashMessage.style.display = "none"
-    }, 4900);
-})()
+    if (flashMessage) {
+        const closeBtn = flashMessage.querySelector('.times');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                flashMessage.style.display = 'none';
+            });
+        }
+
+        setTimeout(() => {
+            flashMessage.style.display = "none";
+        }, 4900);
+    }
+})();
