@@ -428,10 +428,6 @@ body.checked .content .content-img img {
 		font-size: 12px;
 	}
 
-	.hero-cta {
-		flex-direction: column;
-		width: 100%;
-	}
 
 	.hero-btn {
 		justify-content: center;
@@ -893,43 +889,6 @@ body.checked .content .content-img img {
 
 .about-description strong {
 	color: var(--dark);
-	font-weight: 500;
-}
-
-/* Stats Section */
-.about-stats {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1rem;
-}
-
-.stat-item {
-	background: var(--dropdown);
-	border: 1px solid var(--border);
-	border-radius: 12px;
-	padding: 1.25rem;
-	text-align: center;
-	transition: all 0.3s ease;
-}
-
-.stat-item:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 8px 25px var(--shadow);
-	border-color: var(--headerText);
-}
-
-.stat-number {
-	display: block;
-	font-size: 28px;
-	font-weight: 700;
-	color: var(--headerText);
-	line-height: 1;
-	margin-bottom: 6px;
-}
-
-.stat-label {
-	font-size: 12px;
-	color: var(--para);
 	font-weight: 500;
 }
 
@@ -1448,6 +1407,9 @@ section.education .right .skill > div div span p {
 
 .project-header {
 	margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .project-title {
@@ -1490,12 +1452,9 @@ section.education .right .skill > div div span p {
 	color: var(--para);
 }
 
-/* Project Links */
-.project-links {
-	display: flex;
-	gap: 10px;
-	flex-wrap: wrap;
-	margin-top: auto;
+.project-header .links {
+    display: flex;
+    gap: 12px;
 }
 
 .project-link {
@@ -1507,8 +1466,10 @@ section.education .right .skill > div div span p {
 	font-size: 13px;
 	font-weight: 500;
 	text-decoration: none;
+    height: 30px;
 	transition: all 0.3s ease;
 }
+
 
 .project-link.primary {
 	background: linear-gradient(135deg, #00a8ff, #0090e0);

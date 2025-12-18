@@ -26,7 +26,6 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
-	padding: 0 1rem;
 }
 
 .site-header.scrolled .header-container {
@@ -35,10 +34,11 @@
 
 /* Logo */
 .header-logo {
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    min-width: 100px;
 }
 
 .header-logo:hover {
@@ -92,6 +92,14 @@
 }
 
 .nav-link:hover::after {
+	width: 50%;
+}
+
+.nav-link.active {
+	color: var(--headerText);
+}
+
+.nav-link.active::after {
 	width: 50%;
 }
 
@@ -169,7 +177,7 @@
 /* Mobile Navigation */
 .mobile-nav {
 	position: fixed;
-	top: 80px;
+	top: 0px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -180,6 +188,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 24px;
+    height: 100dvh;
 }
 
 .site-header.scrolled + .mobile-nav,
@@ -212,6 +221,12 @@
 .mobile-nav-link:hover {
 	background: rgba(0, 168, 255, 0.1);
 	color: var(--headerText);
+}
+
+.mobile-nav-link.active {
+	background: rgba(0, 168, 255, 0.15);
+	color: var(--headerText);
+	font-weight: 600;
 }
 
 /* Mobile CTA */
@@ -426,9 +441,6 @@
 		height: 38px;
 	}
 
-	.mobile-nav {
-		top: 70px;
-	}
 
 	.site-header.scrolled .mobile-nav {
 		top: 65px;
@@ -460,7 +472,7 @@
 
 @media (max-width: 480px) {
 	.header-container {
-		padding: 0 16px;
+		padding: 0 0px;
 	}
 
 	.mobile-menu-toggle {
